@@ -2,14 +2,14 @@
 
 Class
 {
-	Name					"Class_Primalist"
+	Name					"Warden"
 	DisplayName				"P1617321688"
-	PrimaryCategory			"Primalist_Melee"
-	SecondaryCategory		"Primalist_Buff"
+	PrimaryCategory			"Warden_Melee"
+	SecondaryCategory		"Warden_Buff"
 	PowerPoolCategory		"Pool"
 	DisplayShortHelp		"P730408457"
 	DisplayHelp				"nice cum bro can i taste it"
-	Icon					"Archetypeicon_primalist.tga"
+	Icon					"archetypeicon_warden.tga"
 	AllowedOrigins			Science, Magic, Natural, Mutation, Technology
 	SpecialRestrictions		Hero
 	ConnectHpAndStatus		kFalse
