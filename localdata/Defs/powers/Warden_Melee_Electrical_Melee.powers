@@ -1990,7 +1990,7 @@ Power Warden_Melee.Electrical_Melee.Chain_Induction
 		NearGround           kFalse
 		CancelOnMiss         kFalse
 		StackType            kStack
-		EntityDef            Pets_Chain_Induction_Jump1_Warden
+		EntityDef            Pets_Chain_Induction_Jump1_Scrapper
 		PriorityList         PL_Untargetable_FightPreferRanged
 		// Additional Power Attribs
 		KeepThroughDeath     kTrue
@@ -2442,7 +2442,7 @@ Power Warden_Melee.Electrical_Melee.Lightning_Rod
 		NearGround           kFalse
 		CancelOnMiss         kFalse
 		StackType            kReplace
-		EntityDef            Pets_Lightning_Rod_Warden
+		EntityDef            Pets_Lightning_Rod_Scrapper
 		PriorityList         PL_StaticObject
 	}
 
@@ -2465,7 +2465,7 @@ Power Warden_Melee.Electrical_Melee.Lightning_Rod
 		NearGround           kFalse
 		CancelOnMiss         kFalse
 		StackType            kReplace
-		EntityDef            Pets_Embraced_Lightning_Rod_Warden
+		EntityDef            Pets_Embraced_Lightning_Rod_Scrapper
 		PriorityList         PL_StaticObject
 	}
 }

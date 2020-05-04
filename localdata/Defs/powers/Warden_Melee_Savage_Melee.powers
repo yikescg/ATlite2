@@ -1367,7 +1367,7 @@ Power Warden_Melee.Savage_Melee.Rending_Flurry
 		StackType            kStack
 		Requires             Temporary_Powers.Temporary_Powers.Savage_Melee_Blood_Frenzy source.ownPowerNum? 5 ==
 		// Additional Power Attribs
-		PrimaryStringList    Pets.Warden_Savage_Melee.Rending_Flurry_Large
+		PrimaryStringList    Pets.Scrapper_Savage_Melee.Rending_Flurry_Large
 		AllowCombatMods      kFalse
 	}
 
@@ -1392,7 +1392,7 @@ Power Warden_Melee.Savage_Melee.Rending_Flurry
 		StackType            kStack
 		Requires             1
 		// Additional Power Attribs
-		PrimaryStringList    Pets.Warden_Savage_Melee.Rending_Flurry_Normal
+		PrimaryStringList    Pets.Scrapper_Savage_Melee.Rending_Flurry_Normal
 		AllowCombatMods      kFalse
 	}
 

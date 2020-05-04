@@ -1619,7 +1619,7 @@ Power Warden_Buff.Time_Manipulation.Distortion_Field
 		NearGround           kFalse
 		CancelOnMiss         kFalse
 		StackType            kStack
-		EntityDef            Pets_DistortionField_Warden
+		EntityDef            Pets_DistortionField_Corruptor
 		PriorityList         PL_StaticObject
 	}
 }

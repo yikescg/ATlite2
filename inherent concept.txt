@@ -1,0 +1,7 @@
+Passive Inherent: Attendant
+Base AoE defense, +AoE defense per additional teammate
+Base Ranged/Melee defense, -Ranged/Melee defense per additional teammate
+Allows them to have some basic sustainability against their greatest foe - AoEs - when in teams, and some basic sustainability against direct aggro on smaller teams outside of their secondary set self buffs
+
+Active inherent: Rally Round 
+A meter that builds with damage dealt. When full, unleash a PBAoE buff that gives all nearby allies increased endurance recovery and recharge speed for all powers

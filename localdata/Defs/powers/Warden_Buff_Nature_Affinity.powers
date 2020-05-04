@@ -1445,7 +1445,7 @@ Power Warden_Buff.Nature_Affinity.Lifegiving_Spores
 		NearGround           kTRUE
 		CancelOnMiss         kFalse
 		StackType            kIgnore
-		EntityDef            Pets_Lifegiving_Spores_Warden
+		EntityDef            Pets_Lifegiving_Spores_Corruptor
 		PriorityList         PL_StaticObject
 	}
 }
@@ -1630,7 +1630,7 @@ Power Warden_Buff.Nature_Affinity.Rebirth
 		StackType            kStack
 		Requires             Cur.kHitPoints target> 0 >
 		// Additional Power Attribs
-		PrimaryStringList    Pets.Nature_Affinity_Warden.Rebirth_Warden_Heal
+		PrimaryStringList    Pets.Nature_Affinity_Corruptor.Rebirth_Corruptor_Heal
 		AllowCombatMods      kFalse
 	}
 
@@ -1655,7 +1655,7 @@ Power Warden_Buff.Nature_Affinity.Rebirth
 		StackType            kStack
 		Requires             1
 		// Additional Power Attribs
-		PrimaryStringList    Pets.Nature_Affinity_Warden.Rebirth_Warden_Rez
+		PrimaryStringList    Pets.Nature_Affinity_Corruptor.Rebirth_Corruptor_Rez
 		AllowCombatMods      kFalse
 	}
 
