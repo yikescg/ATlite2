@@ -1172,13 +1172,13 @@ Power Warden_Buff.Sonic_Resonance.Sonic_Repulsion
 		Aspect               kCur
 		Attrib               kKnockback
 		Target               kTarget
-		Scale                3
+		Scale                1
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kTrue
 		Delay                0
 		Duration             0.5
-		Magnitude            1
+		Magnitude            0.67
 		Period               0
 		Chance               1
 		NearGround           kFalse
@@ -1195,13 +1195,13 @@ Power Warden_Buff.Sonic_Resonance.Sonic_Repulsion
 		Aspect               kCur
 		Attrib               kKnockback
 		Target               kTarget
-		Scale                3
+		Scale                1
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kTrue
 		Delay                0
 		Duration             0.5
-		Magnitude            1
+		Magnitude            0.67
 		Period               0
 		Chance               1
 		NearGround           kFalse

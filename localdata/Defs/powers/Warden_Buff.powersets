@@ -165,6 +165,87 @@ PowerSet Warden_Buff.Dark_Miasma
 	MaxDifficulty 9999
 
 }
+PowerSet Warden_Buff.Force_Field
+{
+	Name             "Force_Field"
+	DisplayName      "P2006157955"
+	DisplayShortHelp "P2006157955"
+	DisplayHelp      "P3596894212"
+	IconName         "Force_Field_set.ico"
+
+	Powers Warden_Buff.Force_Field.Deflection_Shield
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Warden_Buff.Force_Field.Personal_Force_Field
+	Available 1
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Warden_Buff.Force_Field.Force_Bolt
+	Available 1
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Warden_Buff.Force_Field.Insulation_Shield
+	Available 5
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Warden_Buff.Force_Field.Refraction_Shield
+	Available 7
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Warden_Buff.Force_Field.Dispersion_Bubble
+	Available 11
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Warden_Buff.Force_Field.Repulsion_Field
+	Available 17
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Warden_Buff.Force_Field.Repulsion_Bomb
+	Available 25
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Warden_Buff.Force_Field.Force_Bubble
+	Available 31
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+}
 PowerSet Warden_Buff.Kinetics
 {
 	Name             "Kinetics"
@@ -189,15 +270,15 @@ PowerSet Warden_Buff.Kinetics
 	MinDifficulty 2
 	MaxDifficulty 9999
 
-	Powers Warden_Buff.Kinetics.Repel
-	Available 3
+		Powers Warden_Buff.Kinetics.Siphon_Speed
+	Available 5
 	AIMaxLevel 0
 	AIMinRankCon -9999
 	AIMaxRankCon 9999
 	MinDifficulty 2
 	MaxDifficulty 9999
 
-	Powers Warden_Buff.Kinetics.Siphon_Speed
+	Powers Warden_Buff.Kinetics.Kinetic_Crawl
 	Available 9
 	AIMaxLevel 0
 	AIMinRankCon -9999

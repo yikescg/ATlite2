@@ -381,126 +381,212 @@ Power Warden_Buff.Kinetics.Siphon_Power
 	}
 }
 
-Power Warden_Buff.Kinetics.Repel
+Power Warden_Buff.Kinetics.Kinetic_Crawl
 {
-	Name                 "Repel"                       
-	DisplayName          "P2155263558"
+	Name                 "Kinetic_Crawl"               
+	DisplayName          "Kinetic Crawl"
 	ModesDisallowed      kDisable_All
 	Type                 kToggle
 	Accuracy             1
-	EntsAffected         kFoe
-	EntsAutoHit          kFoe
+	AttackTypes          kAOE_Attack, kEnergy_Attack
+	EntsAffected         kFoe, kCaster
+	EntsAutoHit          kFoe, kCaster
 	Target               kCaster
 	Range                0
-	EnduranceCost        0.39
+	EnduranceCost        0.60
 	IdeaCost             0
 	InterruptTime        0
-	TimeToActivate       1.07
-	RechargeTime         20
-	ActivatePeriod       0.5
+	TimeToActivate       1.83
+	RechargeTime         10
+	ActivatePeriod       2
 	EffectArea           kSphere
-	Radius               9
+	Radius               25
 	Arc                  0
-	BoostsAllowed        kRecharge_Boost, kEnduranceDiscount_Boost, kKnockback_Boost
-	VisualFX             "menu\Powers\AnimFX\PlayerPowers\CorruptorBuff_Kinetics_Repel.PFX"
-	include              menu\Powers\AnimFX\PlayerPowers\CorruptorBuff_Kinetics_Repel.PFX
-	DisplayShortHelp     "P2287014103"
-	DisplayHelp          "P782172935"
-	DisplayAttackerHit   "P1461880598"
-	IconName             "KineticBoost_Repel.tga"
+	BoostsAllowed        kEnduranceDiscount_Boost, kSlow_Boost, kSpeedRunning_Boost, kRecharge_Boost
+	// Additional Power Factors
+	StrengthsDisallowed  kRange
+	VisualFX             "menu\Powers\AnimFX\PlayerPowers\KineticBoost_KineticCrawl.PFX"
+	include              menu\Powers\AnimFX\PlayerPowers\KineticBoost_KineticCrawl.PFX
+	DisplayShortHelp     "P3236372965"
+	DisplayHelp          "P4094545852"
+	DisplayAttackerHit   "P3060559231"
+	IconName             "KineticBoost_Kinetic_Crawl.tga"
 	TimeToConfirm        0
-	MaxTargetsHit        16
+	MaxTargetsHit        10
+	CastThroughHold      kTRUE
+	CastThroughSleep     kTRUE
+	CastThroughStun      kTRUE
+	CastThroughTerrorize kTRUE
+	DisplayTargetShortHelp "P3655213320"
+	DisplayTargetHelp    "P3232901028"
 
 	AttribMod
 	{
-		Name                 "Knockback"                   
-		Table                "Ranged_Knockback"            
+		Name                 "Slow"                        
+		Table                "Melee_Slow"                  
 		Aspect               kCur
-		Attrib               kKnockback
+		Attrib               kRunSpeed
 		Target               kTarget
-		Scale                3
+		Scale                0.7
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kTrue
 		Delay                0
-		Duration             0.5
+		Duration             5
 		Magnitude            1
 		Period               0
 		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
 		StackType            kReplace
-		Requires             enttype target> critter eq
-		AllowCombatMods      kFalse
+		ContinuingFX         PFX
 	}
 
 	AttribMod
 	{
-		Name                 "Ones"                        
-		Table                "Ranged_Ones"                 
-		Aspect               kAbs
-		Attrib               kEndurance
-		Target               kSelf
-		Scale                -1
+		Name                 "Slow"                        
+		Table                "Melee_Slow"                  
+		Aspect               kStr
+		Attrib               kRechargeTime
+		Target               kTarget
+		Scale                0.4
 		Type                 kMagnitude
 		AllowStrength        kFalse
-		AllowResistance      kFalse
+		AllowResistance      kTrue
 		Delay                0
-		Duration             0
+		Duration             5
+		Magnitude            1
+		Period               0
+		Chance               1.0
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "SpeedRunning"                
+		Table                "Melee_SpeedRunning"          
+		Aspect               kMax
+		Attrib               kRunSpeed
+		Target               kTarget
+		Scale                -0.7
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kTrue
+		Delay                0
+		Duration             5
 		Magnitude            1
 		Period               0
 		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		StackType            kStack
-		AllowCombatMods      kFalse
+		StackType            kReplace
 	}
 
 	AttribMod
 	{
-		Name                 "Knockback"                   
-		Table                "Ranged_Knockback"            
+		Name                 "Slow"                        
+		Table                "Melee_Slow"                  
 		Aspect               kCur
-		Attrib               kKnockback
+		Attrib               kFlySpeed
 		Target               kTarget
-		Scale                3
+		Scale                0.7
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kTrue
 		Delay                0
-		Duration             0
+		Duration             5
 		Magnitude            1
 		Period               0
 		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		StackType            kStack
-		Requires             enttype target> player eq
-		AllowCombatMods      kFalse
-		Suppress             Knocked 10 WhenInactive
+		StackType            kReplace
 	}
 
 	AttribMod
 	{
-		Name                 "Ones"                        
-		Table                "Ranged_Ones"                 
-		Aspect               kAbs
-		Attrib               kDropToggles
+		Name                 "Slow"                        
+		Table                "Melee_Slow"                  
+		Aspect               kStr
+		Attrib               kJumpHeight
 		Target               kTarget
-		Scale                1
+		Scale                0.7
 		Type                 kMagnitude
 		AllowStrength        kFalse
-		AllowResistance      kFalse
+		AllowResistance      kTrue
 		Delay                0
-		Duration             0
+		Duration             5
 		Magnitude            1
 		Period               0
-		Chance               0.00
+		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P4013495699"
-		StackType            kStack
-		Requires             enttype target> player eq
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Slow"                        
+		Table                "Melee_Slow"                  
+		Aspect               kCur
+		Attrib               kSpeedJumping
+		Target               kTarget
+		Scale                0.7
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             5
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "SpeedRunning"                
+		Table                "Melee_SpeedRunning"                
+		Aspect               kCur
+		Attrib               kRunSpeed
+		Target               kSelf
+		Scale                -0.5
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kTrue
+		Delay                0
+		Duration             10
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Slow"                        
+		Table                "Melee_Slow"                  
+		Aspect               kStr
+		Attrib               kRechargeTime
+		Target               kSelf
+		Scale                -0.3
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kTrue
+		Delay                0
+		Duration             10
+		Magnitude            1
+		Period               0
+		Chance               1.0
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
 	}
 }
 

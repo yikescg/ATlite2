@@ -1233,51 +1233,6 @@ Power Warden_Buff.Storm_Summoning.Hurricane
 
 	AttribMod
 	{
-		Name                 "Ones"                        
-		Table                "Ranged_Ones"                 
-		Aspect               kCur
-		Attrib               kRepel
-		Target               kTarget
-		Scale                1
-		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kTrue
-		Delay                0
-		Duration             1.05
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kReplace
-		Requires             enttype target> critter eq
-	}
-
-	AttribMod
-	{
-		Name                 "Ones"                        
-		Table                "Ranged_Ones"                 
-		Aspect               kCur
-		Attrib               kRepel
-		Target               kTarget
-		Scale                1
-		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kTrue
-		Delay                0
-		Duration             0.75
-		Magnitude            1
-		Period               1
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kReplace
-		Requires             enttype target> player eq @ToHitRoll .10 + @ToHit < &&
-		RadiusOuter          15
-	}
-
-	AttribMod
-	{
 		Name                 "Knockback"                   
 		Table                "Ranged_Knockback"            
 		Aspect               kCur
@@ -1289,7 +1244,7 @@ Power Warden_Buff.Storm_Summoning.Hurricane
 		AllowResistance      kTrue
 		Delay                0
 		Duration             0
-		Magnitude            1
+		Magnitude            0.67
 		Period               0
 		Chance               0.05
 		NearGround           kFalse
@@ -1311,7 +1266,7 @@ Power Warden_Buff.Storm_Summoning.Hurricane
 		AllowResistance      kTrue
 		Delay                0
 		Duration             0
-		Magnitude            1
+		Magnitude            0.67
 		Period               0
 		Chance               1
 		NearGround           kFalse

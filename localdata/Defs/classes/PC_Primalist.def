@@ -2,8 +2,8 @@
 
 Class
 {
-	Name					"Warden"
-	DisplayName				"P1617321688"
+	Name					"Class_Warden"
+	DisplayName				"Warden"
 	PrimaryCategory			"Warden_Melee"
 	SecondaryCategory		"Warden_Buff"
 	PowerPoolCategory		"Pool"
