@@ -1,0 +1,3 @@
+  32 x   32 ALPHA GUI\Icons\powers\BattleAxe_Placate.tga # TRUECOLOR CLAMPS CLAMPT NOMIP
+  32 x   32 ALPHA GUI\Icons\powers\FieryFray_Placate.tga # TRUECOLOR CLAMPS CLAMPT NOMIP
+  32 x   32 ALPHA GUI\Icons\powers\Mace_Placate.tga # TRUECOLOR CLAMPS CLAMPT NOMIP

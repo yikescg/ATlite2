@@ -1076,47 +1076,47 @@ Power Warden_Melee.Martial_Arts.Crane_Kick
 	}
 }
 
-Power Warden_Melee.Martial_Arts.Warriors_Challenge
+Power Warden_Melee.Martial_Arts.Disengage
 {
-	Name                 "Warriors_Challenge"          
-	DisplayName          "P1213317196"
+	Name                 "Disengage"                     
+	DisplayName          "P1969692355"
 	ModesDisallowed      kDisable_All
 	Type                 kClick
 	Accuracy             1
-	AttackTypes          kRanged_Attack
 	EntsAffected         kFoe
 	EntsAutoHit          kFoe
 	Target               kFoe
-	Range                70
+	Range                50
 	EnduranceCost        0
 	IdeaCost             0
-	TravelSuppression    3.5
+	TravelSuppression    4.5
 	InterruptTime        0
-	TimeToActivate       1.67
-	RechargeTime         3
+	TimeToActivate       1.5
+	RechargeTime         60
 	ActivatePeriod       0
-	EffectArea           kCharacter
-	Radius               0
+	EffectArea           kSphere
+	Radius               18
 	Arc                  0
-	BoostsAllowed        kAccuracy_Boost, kRange_Boost, kTaunt_Boost, kRecharge_Boost
-	VisualFX             "menu\Powers\AnimFX\PlayerPowers\ScrapperMelee_MartialArts_WarriorsChallenge.PFX"
-	include              menu\Powers\AnimFX\PlayerPowers\ScrapperMelee_MartialArts_WarriorsChallenge.PFX
-	DisplayShortHelp     "P3081230164"
-	DisplayHelp          "P1413040774"
-	DisplayVictimHit     "P512158362"
-	IconName             "MartialArts_Warrior'sChallenge.tga"
+	AIReport             kNever
+	BoostsAllowed        kRange_Boost, kRecharge_Boost
+	VisualFX             "menu\Powers\AnimFX\PlayerPowers\StalkerMelee_MartialArts_Placate.PFX"
+	include              menu\Powers\AnimFX\PlayerPowers\StalkerMelee_MartialArts_Placate.PFX
+	DisplayShortHelp     "P389273554"
+	DisplayHelp          "P1669918"
+	IconName             "MartialArts_Placate.tga"
 	TimeToConfirm        0
-	DisplayTargetShortHelp "P1821176972"
-	DisplayTargetHelp    "P523820566"
+	MaxTargetsHit        8
+	DisplayTargetShortHelp "P1943041994"
+	DisplayTargetHelp    "P2833281680"
 
 	AttribMod
 	{
 		Name                 "Taunt"                       
 		Table                "Melee_Taunt"                 
 		Aspect               kAbs
-		Attrib               kTaunt
+		Attrib               kPlacate
 		Target               kTarget
-		Scale                15
+		Scale                10
 		Type                 kDuration
 		AllowStrength        kTrue
 		AllowResistance      kTrue
@@ -1127,7 +1127,7 @@ Power Warden_Melee.Martial_Arts.Warriors_Challenge
 		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P721594642"
+		DisplayAttackerHit   "P254088221"
 		StackType            kStack
 		Requires             enttype target> critter eq
 	}
@@ -1137,9 +1137,9 @@ Power Warden_Melee.Martial_Arts.Warriors_Challenge
 		Name                 "Taunt"                       
 		Table                "Melee_Taunt"                 
 		Aspect               kAbs
-		Attrib               kTaunt
+		Attrib               kPlacate
 		Target               kTarget
-		Scale                4
+		Scale                6
 		Type                 kDuration
 		AllowStrength        kTrue
 		AllowResistance      kTrue
@@ -1150,55 +1150,10 @@ Power Warden_Melee.Martial_Arts.Warriors_Challenge
 		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P583975673"
-		DisplayVictimHit     "P3669502634"
+		DisplayAttackerHit   "P254088221"
+		DisplayVictimHit     "P1864267621"
 		StackType            kStack
-		Requires             enttype target> player eq @ToHitRoll @ToHit < @ForceHit || &&
-	}
-
-	AttribMod
-	{
-		Name                 "Ones"                        
-		Table                "Melee_Ones"                  
-		Aspect               kStr
-		Attrib               kRange
-		Target               kTarget
-		Scale                -0.75
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kTrue
-		Delay                0
-		Duration             12
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFALSE
-		CancelOnMiss         kFALSE
-		StackType            kStack
-	}
-
-	AttribMod
-	{
-		Name                 "Ones"                        
-		Table                "Melee_Ones"                  
-		Aspect               kCur
-		Attrib               kNull
-		Target               kTarget
-		Scale                1
-		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kTrue
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P3564954679"
-		DisplayVictimHit     "P4215765545"
-		StackType            kStack
-		Requires             enttype target> player eq @ToHitRoll @ToHit >= @ForceHit || &&
+		Requires             enttype target> player eq
 	}
 }
 

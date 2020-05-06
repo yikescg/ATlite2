@@ -3,7 +3,7 @@
 Power Warden_Melee.Broad_Sword.Hack
 {
 	Name                 "Hack"                        
-	DisplayName          "P2722205293"
+	DisplayName          "P1969692334"
 	ModesDisallowed      kDisable_All
 	Type                 kClick
 	Accuracy             1.05
@@ -27,8 +27,8 @@ Power Warden_Melee.Broad_Sword.Hack
 	StrengthsDisallowed  kRange
 	VisualFX             "menu\Powers\AnimFX\Sword_Down_NoGeo.pfx"
 	include              menu\Powers\AnimFX\Sword_Down_NoGeo.pfx
-	DisplayShortHelp     "P2379971826"
-	DisplayHelp          "P4293504502"
+	DisplayShortHelp     "P389273554"
+	DisplayHelp          "P1092318"
 	IconName             "Sword_Hack.tga"
 	TimeToConfirm        0
 	DisplayTargetShortHelp "P373215750"
@@ -1050,47 +1050,47 @@ Power Warden_Melee.Broad_Sword.Parry
 	}
 }
 
-Power Warden_Melee.Broad_Sword.Taunt
+Power Warden_Melee.Broad_Sword.Disengage
 {
-	Name                 "Taunt"                       
-	DisplayName          "P3052002730"
+	Name                 "Disengage"                     
+	DisplayName          "P1969692334"
 	ModesDisallowed      kDisable_All
 	Type                 kClick
 	Accuracy             1
-	AttackTypes          kRanged_Attack
 	EntsAffected         kFoe
 	EntsAutoHit          kFoe
 	Target               kFoe
-	Range                70
+	Range                50
 	EnduranceCost        0
 	IdeaCost             0
-	TravelSuppression    3.5
+	TravelSuppression    4.5
 	InterruptTime        0
-	TimeToActivate       1.67
-	RechargeTime         3
+	TimeToActivate       1.5
+	RechargeTime         60
 	ActivatePeriod       0
-	EffectArea           kCharacter
-	Radius               0
+	EffectArea           kSphere
+	Radius               18
 	Arc                  0
-	BoostsAllowed        kAccuracy_Boost, kRange_Boost, kTaunt_Boost, kRecharge_Boost
-	VisualFX             "menu\Powers\AnimFX\Sword_Taunt_NoGeo.pfx"
-	include              menu\Powers\AnimFX\Sword_Taunt_NoGeo.pfx
-	DisplayShortHelp     "P3081230164"
-	DisplayHelp          "P1413040774"
-	DisplayVictimHit     "P512158362"
-	IconName             "Sword_Taunt.tga"
+	AIReport             kNever
+	BoostsAllowed        kRange_Boost, kRecharge_Boost
+	VisualFX             "menu\Powers\AnimFX\Sword_Placate_NoGeo.pfx"
+	include              menu\Powers\AnimFX\Sword_Placate_NoGeo.pfx
+	DisplayShortHelp     "P389273554"
+	DisplayHelp          "P1669918"
+	IconName             "Sword_Placate.tga"
 	TimeToConfirm        0
-	DisplayTargetShortHelp "P1980192711"
-	DisplayTargetHelp    "P4173113734"
+	MaxTargetsHit        8
+	DisplayTargetShortHelp "P1943041994"
+	DisplayTargetHelp    "P2833281680"
 
 	AttribMod
 	{
 		Name                 "Taunt"                       
 		Table                "Melee_Taunt"                 
 		Aspect               kAbs
-		Attrib               kTaunt
+		Attrib               kPlacate
 		Target               kTarget
-		Scale                15
+		Scale                10
 		Type                 kDuration
 		AllowStrength        kTrue
 		AllowResistance      kTrue
@@ -1101,7 +1101,7 @@ Power Warden_Melee.Broad_Sword.Taunt
 		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P3752458412"
+		DisplayAttackerHit   "P254088221"
 		StackType            kStack
 		Requires             enttype target> critter eq
 	}
@@ -1111,9 +1111,9 @@ Power Warden_Melee.Broad_Sword.Taunt
 		Name                 "Taunt"                       
 		Table                "Melee_Taunt"                 
 		Aspect               kAbs
-		Attrib               kTaunt
+		Attrib               kPlacate
 		Target               kTarget
-		Scale                4
+		Scale                6
 		Type                 kDuration
 		AllowStrength        kTrue
 		AllowResistance      kTrue
@@ -1124,55 +1124,10 @@ Power Warden_Melee.Broad_Sword.Taunt
 		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P583975673"
-		DisplayVictimHit     "P3669502634"
+		DisplayAttackerHit   "P254088221"
+		DisplayVictimHit     "P1864267621"
 		StackType            kStack
-		Requires             enttype target> player eq @ToHitRoll @ToHit < @ForceHit || &&
-	}
-
-	AttribMod
-	{
-		Name                 "Ones"                        
-		Table                "Melee_Ones"                  
-		Aspect               kStr
-		Attrib               kRange
-		Target               kTarget
-		Scale                -0.75
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kTrue
-		Delay                0
-		Duration             12
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFALSE
-		CancelOnMiss         kFALSE
-		StackType            kStack
-	}
-
-	AttribMod
-	{
-		Name                 "Ones"                        
-		Table                "Melee_Ones"                  
-		Aspect               kCur
-		Attrib               kNull
-		Target               kTarget
-		Scale                1
-		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kTrue
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P3564954679"
-		DisplayVictimHit     "P4215765545"
-		StackType            kStack
-		Requires             enttype target> player eq @ToHitRoll @ToHit >= @ForceHit || &&
+		Requires             enttype target> player eq
 	}
 }
 

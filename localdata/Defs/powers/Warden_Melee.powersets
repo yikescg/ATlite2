@@ -53,7 +53,7 @@ PowerSet Warden_Melee.Battle_Axe
 	MinDifficulty 2
 	MaxDifficulty 9999
 
-	Powers Warden_Melee.Battle_Axe.Confront
+	Powers Warden_Melee.Battle_Axe.Disengage
 	Available 11
 	AIMaxLevel 0
 	AIMinRankCon -9999
@@ -136,7 +136,7 @@ PowerSet Warden_Melee.Broad_Sword
 	MinDifficulty 2
 	MaxDifficulty 9999
 
-	Powers Warden_Melee.Broad_Sword.Taunt
+	Powers Warden_Melee.Broad_Sword.Disengage
 	Available 11
 	AIMaxLevel 0
 	AIMinRankCon -9999
@@ -219,7 +219,7 @@ PowerSet Warden_Melee.Claws
 	MinDifficulty 2
 	MaxDifficulty 9999
 
-	Powers Warden_Melee.Claws.Taunt
+	Powers Warden_Melee.Claws.Disengage
 	Available 11
 	AIMaxLevel 0
 	AIMinRankCon -9999
@@ -302,7 +302,7 @@ PowerSet Warden_Melee.Dual_Blades
 	MinDifficulty 2
 	MaxDifficulty 9999
 
-	Powers Warden_Melee.Dual_Blades.Taunt
+	Powers Warden_Melee.Dual_Blades.Disengage
 	Available 11
 	AIMaxLevel 0
 	AIMinRankCon -9999
@@ -383,7 +383,7 @@ PowerSet Warden_Melee.Dark_Melee
 	MinDifficulty 2
 	MaxDifficulty 9999
 
-	Powers Warden_Melee.Dark_Melee.Taunt
+	Powers Warden_Melee.Dark_Melee.Disengage
 	Available 11
 	AIMaxLevel 0
 	AIMinRankCon -9999
@@ -464,7 +464,7 @@ PowerSet Warden_Melee.Electrical_Melee
 	MinDifficulty 2
 	MaxDifficulty 9999
 
-	Powers Warden_Melee.Electrical_Melee.Confront
+	Powers Warden_Melee.Electrical_Melee.Disengage
 	Available 11
 	AIMaxLevel 0
 	AIMinRankCon -9999
@@ -545,7 +545,7 @@ PowerSet Warden_Melee.Fiery_Melee
 	MinDifficulty 2
 	MaxDifficulty 9999
 
-	Powers Warden_Melee.Fiery_Melee.Provoke
+	Powers Warden_Melee.Fiery_Melee.Disengage
 	Available 11
 	AIMaxLevel 0
 	AIMinRankCon -9999
@@ -628,7 +628,7 @@ PowerSet Warden_Melee.Katana
 	MinDifficulty 2
 	MaxDifficulty 9999
 
-	Powers Warden_Melee.Katana.Taunt
+	Powers Warden_Melee.Katana.Disengage
 	Available 11
 	AIMaxLevel 0
 	AIMinRankCon -9999
@@ -712,7 +712,7 @@ PowerSet Warden_Melee.Kinetic_Attack
 	MinDifficulty 2
 	MaxDifficulty 9999
 
-	Powers Warden_Melee.Kinetic_Attack.Confront
+	Powers Warden_Melee.Kinetic_Attack.Disengage
 	Available 11
 	AIMaxLevel 0
 	AIMinRankCon -9999
@@ -793,7 +793,7 @@ PowerSet Warden_Melee.Martial_Arts
 	MinDifficulty 2
 	MaxDifficulty 9999
 
-	Powers Warden_Melee.Martial_Arts.Warriors_Challenge
+	Powers Warden_Melee.Martial_Arts.Disengage
 	Available 11
 	AIMaxLevel 0
 	AIMinRankCon -9999
@@ -877,7 +877,7 @@ PowerSet Warden_Melee.Psionic_Melee
 	MinDifficulty 2
 	MaxDifficulty 9999
 
-	Powers Warden_Melee.Psionic_Melee.Confront
+	Powers Warden_Melee.Psionic_Melee.Disengage
 	Available 11
 	AIMaxLevel 0
 	AIMinRankCon -9999
@@ -961,7 +961,7 @@ PowerSet Warden_Melee.Radiation_Melee
 	MinDifficulty 2
 	MaxDifficulty 9999
 
-	Powers Warden_Melee.Radiation_Melee.Confront
+	Powers Warden_Melee.Radiation_Melee.Disengage
 	Available 11
 	AIMaxLevel 0
 	AIMinRankCon -9999
@@ -1045,7 +1045,7 @@ PowerSet Warden_Melee.Savage_Melee
 	MinDifficulty 2
 	MaxDifficulty 9999
 
-	Powers Warden_Melee.Savage_Melee.Confront
+	Powers Warden_Melee.Savage_Melee.Disengage
 	Available 11
 	AIMaxLevel 0
 	AIMinRankCon -9999
@@ -1126,7 +1126,7 @@ PowerSet Warden_Melee.Quills
 	MinDifficulty 2
 	MaxDifficulty 9999
 
-	Powers Warden_Melee.Quills.Taunt
+	Powers Warden_Melee.Quills.Disengage
 	Available 11
 	AIMaxLevel 0
 	AIMinRankCon -9999
@@ -1236,7 +1236,7 @@ PowerSet Warden_Melee.Staff_Fighting
 	MinDifficulty 2
 	MaxDifficulty 9999
 
-	Powers Warden_Melee.Staff_Fighting.Confront
+	Powers Warden_Melee.Staff_Fighting.Disengage
 	Available 11
 	AIMaxLevel 0
 	AIMinRankCon -9999
@@ -1320,7 +1320,7 @@ PowerSet Warden_Melee.Brawling
 	MinDifficulty 2
 	MaxDifficulty 9999
 
-	Powers Warden_Melee.Brawling.Confront
+	Powers Warden_Melee.Brawling.Disengage
 	Available 11
 	AIMaxLevel 0
 	AIMinRankCon -9999
@@ -1345,92 +1345,6 @@ PowerSet Warden_Melee.Brawling
 	MaxDifficulty 9999
 
 	Powers Warden_Melee.Brawling.Crushing_Uppercut
-	Available 31
-	AIMaxLevel 0
-	AIMinRankCon -9999
-	AIMaxRankCon 9999
-	MinDifficulty 2
-	MaxDifficulty 9999
-
-}
-PowerSet Warden_Melee.Titan_Weapons
-{
-	Name             "Titan_Weapons"
-	DisplayName      "P1852466848"
-	DisplayShortHelp "P1852466848"
-	DisplayHelp      "P460724567"
-	CostumeKeys      CustomWeapon_TitanWeapon_Base
-	CostumeParts     TitanWeapon_Default
-	SetAccountRequires	"ctpstiwp ProductOwned?"
-	SetAccountTooltip	"P259518364"
-	SetAccountProduct	ctpstiwp
-	IconName         "Titan_Weapons_set.ico"
-
-	Powers Warden_Melee.Titan_Weapons.Defensive_Sweep
-	Available 0
-	AIMaxLevel 0
-	AIMinRankCon -9999
-	AIMaxRankCon 9999
-	MinDifficulty 2
-	MaxDifficulty 9999
-
-	Powers Warden_Melee.Titan_Weapons.Crushing_Blow
-	Available 0
-	AIMaxLevel 0
-	AIMinRankCon -9999
-	AIMaxRankCon 9999
-	MinDifficulty 2
-	MaxDifficulty 9999
-
-	Powers Warden_Melee.Titan_Weapons.Sweeping_Strike
-	Available 1
-	AIMaxLevel 0
-	AIMinRankCon -9999
-	AIMaxRankCon 9999
-	MinDifficulty 2
-	MaxDifficulty 9999
-
-	Powers Warden_Melee.Titan_Weapons.Follow_Through
-	Available 5
-	AIMaxLevel 0
-	AIMinRankCon -9999
-	AIMaxRankCon 9999
-	MinDifficulty 2
-	MaxDifficulty 9999
-
-	Powers Warden_Melee.Titan_Weapons.Build_Up
-	Available 7
-	AIMaxLevel 0
-	AIMinRankCon -9999
-	AIMaxRankCon 9999
-	MinDifficulty 2
-	MaxDifficulty 9999
-
-	Powers Warden_Melee.Titan_Weapons.Confront
-	Available 11
-	AIMaxLevel 0
-	AIMinRankCon -9999
-	AIMaxRankCon 9999
-	MinDifficulty 2
-	MaxDifficulty 9999
-
-	Powers Warden_Melee.Titan_Weapons.Shatter_Armor
-	Available 17
-	AIMaxLevel 0
-	AIMinRankCon -9999
-	AIMaxRankCon 9999
-	MinDifficulty 2
-	MaxDifficulty 9999
-
-	Powers Warden_Melee.Titan_Weapons.Whirling_Slice
-	Available 25
-	AIMaxLevel 0
-	AIMinRankCon -9999
-	AIMaxRankCon 9999
-	MinDifficulty 2
-	MaxDifficulty 9999
-
-	Powers Warden_Melee.Titan_Weapons.Arc_of_Destruction
 	Available 31
 	AIMaxLevel 0
 	AIMinRankCon -9999
@@ -1489,7 +1403,7 @@ PowerSet Warden_Melee.War_Mace
 	MinDifficulty 2
 	MaxDifficulty 9999
 
-	Powers Warden_Melee.War_Mace.Confront
+	Powers Warden_Melee.War_Mace.Disengage
 	Available 11
 	AIMaxLevel 0
 	AIMinRankCon -9999

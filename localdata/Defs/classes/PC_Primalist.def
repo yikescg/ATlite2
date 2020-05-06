@@ -3,12 +3,12 @@
 Class
 {
 	Name					"Class_Warden"
-	DisplayName				"Warden"
+	DisplayName				"P9005417637"
 	PrimaryCategory			"Warden_Melee"
 	SecondaryCategory		"Warden_Buff"
 	PowerPoolCategory		"Pool"
-	DisplayShortHelp		"P730408457"
-	DisplayHelp				"nice cum bro can i taste it"
+	DisplayShortHelp		"Help your allies, weaken your foes. Focuses on close quarters"
+	DisplayHelp				"P3869696969"
 	Icon					"archetypeicon_warden.tga"
 	AllowedOrigins			Science, Magic, Natural, Mutation, Technology
 	SpecialRestrictions		Hero

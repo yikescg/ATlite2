@@ -384,7 +384,7 @@ Power Warden_Buff.Kinetics.Siphon_Power
 Power Warden_Buff.Kinetics.Kinetic_Crawl
 {
 	Name                 "Kinetic_Crawl"               
-	DisplayName          "Kinetic Crawl"
+	DisplayName          "P2000200558"
 	ModesDisallowed      kDisable_All
 	Type                 kToggle
 	Accuracy             1
@@ -407,9 +407,8 @@ Power Warden_Buff.Kinetics.Kinetic_Crawl
 	StrengthsDisallowed  kRange
 	VisualFX             "menu\Powers\AnimFX\PlayerPowers\KineticBoost_KineticCrawl.PFX"
 	include              menu\Powers\AnimFX\PlayerPowers\KineticBoost_KineticCrawl.PFX
-	DisplayShortHelp     "P3236372965"
-	DisplayHelp          "P4094545852"
-	DisplayAttackerHit   "P3060559231"
+	DisplayShortHelp     "P2299692663"
+	DisplayHelp          "P766648735"
 	IconName             "KineticBoost_Kinetic_Crawl.tga"
 	TimeToConfirm        0
 	MaxTargetsHit        10
@@ -470,7 +469,7 @@ Power Warden_Buff.Kinetics.Kinetic_Crawl
 		Aspect               kMax
 		Attrib               kRunSpeed
 		Target               kTarget
-		Scale                -0.7
+		Scale                -0.6
 		Type                 kMagnitude
 		AllowStrength        kFalse
 		AllowResistance      kTrue
@@ -554,7 +553,7 @@ Power Warden_Buff.Kinetics.Kinetic_Crawl
 		Aspect               kCur
 		Attrib               kRunSpeed
 		Target               kSelf
-		Scale                -0.5
+		Scale                2
 		Type                 kMagnitude
 		AllowStrength        kFalse
 		AllowResistance      kTrue
@@ -565,7 +564,7 @@ Power Warden_Buff.Kinetics.Kinetic_Crawl
 		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		StackType            kReplace
+		StackType            kOverlap
 	}
 
 	AttribMod

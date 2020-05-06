@@ -4,7 +4,6 @@ Power Warden_Melee.Staff_Fighting.Mercurial_Blow
 {
 	Name                 "Mercurial_Blow"              
 	DisplayName          "P4212191260"
-	BuyRequires          Warden_Defense.Shield_Defense !
 	ModesDisallowed      kDisable_All
 	Type                 kClick
 	Accuracy             1.05
@@ -564,7 +563,6 @@ Power Warden_Melee.Staff_Fighting.Precise_Strike
 {
 	Name                 "Precise_Strike"              
 	DisplayName          "P1562137608"
-	BuyRequires          Warden_Defense.Shield_Defense !
 	ModesDisallowed      kDisable_All
 	Type                 kClick
 	Accuracy             1.1
@@ -3963,47 +3961,47 @@ Power Warden_Melee.Staff_Fighting.Form_of_the_Soul
 	}
 }
 
-Power Warden_Melee.Staff_Fighting.Confront
+Power Warden_Melee.Staff_Fighting.Disengage
 {
-	Name                 "Confront"                    
-	DisplayName          "P3052002730"
+	Name                 "Disengage"                     
+	DisplayName          "P1969692334"
 	ModesDisallowed      kDisable_All
 	Type                 kClick
 	Accuracy             1
-	AttackTypes          kRanged_Attack
 	EntsAffected         kFoe
 	EntsAutoHit          kFoe
 	Target               kFoe
-	Range                70
+	Range                50
 	EnduranceCost        0
 	IdeaCost             0
-	TravelSuppression    3.5
+	TravelSuppression    4.5
 	InterruptTime        0
-	TimeToActivate       2
-	RechargeTime         3
+	TimeToActivate       1.5
+	RechargeTime         60
 	ActivatePeriod       0
-	EffectArea           kCharacter
-	Radius               0
+	EffectArea           kSphere
+	Radius               18
 	Arc                  0
-	BoostsAllowed        kAccuracy_Boost, kRange_Boost, kTaunt_Boost, kRecharge_Boost
-	VisualFX             "menu/Powers/AnimFX/PlayerPowers/ScrapperMelee_LongStaff_Taunt.PFX"
-	include              menu/Powers/AnimFX/PlayerPowers/ScrapperMelee_LongStaff_Taunt.PFX
-	DisplayShortHelp     "P3081230164"
-	DisplayHelp          "P430779588"
-	DisplayVictimHit     "P512158362"
-	IconName             "StaffFighting_Confront.tga"
+	AIReport             kNever
+	BoostsAllowed        kRange_Boost, kRecharge_Boost
+	VisualFX             "menu/Powers/AnimFX/PlayerPowers/StalkerMelee_LongStaff_Placate.PFX"
+	include              menu/Powers/AnimFX/PlayerPowers/StalkerMelee_LongStaff_Placate.PFX
+	DisplayShortHelp     "P389273554"
+	DisplayHelp          "P1669918"
+	IconName             "StaffFighting_Placate.tga"
 	TimeToConfirm        0
-	DisplayTargetShortHelp "P1980192711"
-	DisplayTargetHelp    "P4173113734"
+	MaxTargetsHit        8
+	DisplayTargetShortHelp "P1943041994"
+	DisplayTargetHelp    "P2833281680"
 
 	AttribMod
 	{
 		Name                 "Taunt"                       
 		Table                "Melee_Taunt"                 
 		Aspect               kAbs
-		Attrib               kTaunt
+		Attrib               kPlacate
 		Target               kTarget
-		Scale                15
+		Scale                10
 		Type                 kDuration
 		AllowStrength        kTrue
 		AllowResistance      kTrue
@@ -4014,7 +4012,7 @@ Power Warden_Melee.Staff_Fighting.Confront
 		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P3752458412"
+		DisplayAttackerHit   "P254088221"
 		StackType            kStack
 		Requires             enttype target> critter eq
 	}
@@ -4024,9 +4022,9 @@ Power Warden_Melee.Staff_Fighting.Confront
 		Name                 "Taunt"                       
 		Table                "Melee_Taunt"                 
 		Aspect               kAbs
-		Attrib               kTaunt
+		Attrib               kPlacate
 		Target               kTarget
-		Scale                4
+		Scale                6
 		Type                 kDuration
 		AllowStrength        kTrue
 		AllowResistance      kTrue
@@ -4037,55 +4035,10 @@ Power Warden_Melee.Staff_Fighting.Confront
 		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P583975673"
-		DisplayVictimHit     "P3669502634"
+		DisplayAttackerHit   "P254088221"
+		DisplayVictimHit     "P1864267621"
 		StackType            kStack
-		Requires             enttype target> player eq @ToHitRoll @ToHit < @ForceHit || &&
-	}
-
-	AttribMod
-	{
-		Name                 "Ones"                        
-		Table                "Melee_Ones"                  
-		Aspect               kStr
-		Attrib               kRange
-		Target               kTarget
-		Scale                -0.75
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kTrue
-		Delay                0
-		Duration             12
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFALSE
-		CancelOnMiss         kFALSE
-		StackType            kStack
-	}
-
-	AttribMod
-	{
-		Name                 "Ones"                        
-		Table                "Melee_Ones"                  
-		Aspect               kCur
-		Attrib               kNull
-		Target               kTarget
-		Scale                1
-		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kTrue
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P3564954679"
-		DisplayVictimHit     "P4215765545"
-		StackType            kStack
-		Requires             enttype target> player eq @ToHitRoll @ToHit >= @ForceHit || &&
+		Requires             enttype target> player eq
 	}
 }
 
