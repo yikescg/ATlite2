@@ -138,101 +138,24 @@ Power Warden_Melee.Martial_Arts.Thunder_Kick
 
 	AttribMod
 	{
-		Name                 "ECCritModPlayer"             
-		Table                "Melee_Damage"                
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
 		Aspect               kAbs
-		Attrib               kSmashing
-		Target               kTarget
-		Scale                1.39605494307886
+		Attrib               kGrantPower
+		Target               kSelf
+		Scale                1
 		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kTrue
+		AllowStrength        kFalse
+		AllowResistance      kFalse
 		Delay                0
 		Duration             0
 		Magnitude            1
 		Period               0
-		Chance               0.050
+		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P374533506"
-		DisplayVictimHit     "P329706590"
-		StackType            kStack
-		Requires             enttype target> player eq
-		DisplayFloat         "P2440464263"
-	}
-
-	AttribMod
-	{
-		Name                 "ECCritModSmall"              
-		Table                "Melee_Damage"                
-		Aspect               kAbs
-		Attrib               kSmashing
-		Target               kTarget
-		Scale                0.84
-		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kTrue
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               0.050
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P374533506"
-		DisplayVictimHit     "P329706590"
-		StackType            kStack
-		Requires             arch target> Class_Minion_Grunt eq  arch target> Class_Minion_Small eq ||  arch target> Class_Minion_Pets eq ||  arch target> Class_Minion_Swarm eq ||
-		DisplayFloat         "P2440464263"
-	}
-
-	AttribMod
-	{
-		Name                 "ECCritModLarge"              
-		Table                "Melee_Damage"                
-		Aspect               kAbs
-		Attrib               kSmashing
-		Target               kTarget
-		Scale                0.84
-		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kTrue
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               0.100
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P374533506"
-		DisplayVictimHit     "P329706590"
-		StackType            kStack
-		Requires             arch target> Class_Minion_Grunt eq  arch target> Class_Minion_Small eq ||  arch target> Class_Minion_Pets eq ||  arch target> Class_Minion_Swarm eq || enttype target> player eq || !
-		DisplayFloat         "P2440464263"
-	}
-
-	AttribMod
-	{
-		Name                 "FieryEmbrace"                
-		Table                "Melee_Damage"                
-		Aspect               kAbs
-		Attrib               kFire
-		Target               kTarget
-		Scale                0.378
-		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kTrue
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               0.000
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P780135143"
-		DisplayVictimHit     "P125394365"
-		StackType            kStack
-		ContinuingFX         POWERS/FireControl/CindersHit.fx
+		StackType            kOverlap
+		Reward               Temporary_Powers.Temporary_Powers.Rally
 	}
 }
 
@@ -319,99 +242,24 @@ Power Warden_Melee.Martial_Arts.Storm_Kick
 
 	AttribMod
 	{
-		Name                 "ECCritModPlayer"             
-		Table                "Melee_Damage"                
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
 		Aspect               kAbs
-		Attrib               kSmashing
-		Target               kTarget
-		Scale                1.54821351998119
+		Attrib               kGrantPower
+		Target               kSelf
+		Scale                1
 		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kTrue
+		AllowStrength        kFalse
+		AllowResistance      kFalse
 		Delay                0
 		Duration             0
 		Magnitude            1
 		Period               0
-		Chance               1.000
+		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P91791442"
-		StackType            kStack
-		Requires             enttype target> player eq
-	}
-
-	AttribMod
-	{
-		Name                 "ECCritModSmall"              
-		Table                "Melee_Damage"                
-		Aspect               kAbs
-		Attrib               kSmashing
-		Target               kTarget
-		Scale                1.32
-		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kTrue
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               0.100
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P374533506"
-		DisplayVictimHit     "P329706590"
-		StackType            kStack
-		Requires             arch target> Class_Minion_Grunt eq  arch target> Class_Minion_Small eq ||  arch target> Class_Minion_Pets eq ||  arch target> Class_Minion_Swarm eq ||
-		DisplayFloat         "P2440464263"
-	}
-
-	AttribMod
-	{
-		Name                 "ECCritModLarge"              
-		Table                "Melee_Damage"                
-		Aspect               kAbs
-		Attrib               kSmashing
-		Target               kTarget
-		Scale                1.32
-		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kTrue
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               0.150
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P374533506"
-		DisplayVictimHit     "P329706590"
-		StackType            kStack
-		Requires             arch target> Class_Minion_Grunt eq  arch target> Class_Minion_Small eq ||  arch target> Class_Minion_Pets eq ||  arch target> Class_Minion_Swarm eq || enttype target> player eq || !
-		DisplayFloat         "P2440464263"
-	}
-
-	AttribMod
-	{
-		Name                 "FieryEmbrace"                
-		Table                "Melee_Damage"                
-		Aspect               kAbs
-		Attrib               kFire
-		Target               kTarget
-		Scale                0.594
-		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kTrue
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               0.000
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P780135143"
-		DisplayVictimHit     "P125394365"
-		StackType            kStack
-		ContinuingFX         POWERS/FireControl/CindersHit.fx
+		StackType            kOverlap
+		Reward               Temporary_Powers.Temporary_Powers.Rally
 	}
 }
 
@@ -529,101 +377,24 @@ Power Warden_Melee.Martial_Arts.Cobra_Strike
 
 	AttribMod
 	{
-		Name                 "ECCritModPlayer"             
-		Table                "Melee_Damage"                
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
 		Aspect               kAbs
-		Attrib               kSmashing
-		Target               kTarget
-		Scale                1.96
+		Attrib               kGrantPower
+		Target               kSelf
+		Scale                1
 		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kTrue
+		AllowStrength        kFalse
+		AllowResistance      kFalse
 		Delay                0
 		Duration             0
 		Magnitude            1
 		Period               0
-		Chance               0.050
+		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P374533506"
-		DisplayVictimHit     "P329706590"
-		StackType            kStack
-		Requires             enttype target> player eq
-		DisplayFloat         "P2440464263"
-	}
-
-	AttribMod
-	{
-		Name                 "ECCritModSmall"              
-		Table                "Melee_Damage"                
-		Aspect               kAbs
-		Attrib               kSmashing
-		Target               kTarget
-		Scale                1.96
-		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kTrue
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               0.050
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P374533506"
-		DisplayVictimHit     "P329706590"
-		StackType            kStack
-		Requires             arch target> Class_Minion_Grunt eq  arch target> Class_Minion_Small eq ||  arch target> Class_Minion_Pets eq ||  arch target> Class_Minion_Swarm eq ||
-		DisplayFloat         "P2440464263"
-	}
-
-	AttribMod
-	{
-		Name                 "ECCritModLarge"              
-		Table                "Melee_Damage"                
-		Aspect               kAbs
-		Attrib               kSmashing
-		Target               kTarget
-		Scale                1.96
-		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kTrue
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               0.100
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P374533506"
-		DisplayVictimHit     "P329706590"
-		StackType            kStack
-		Requires             arch target> Class_Minion_Grunt eq  arch target> Class_Minion_Small eq ||  arch target> Class_Minion_Pets eq ||  arch target> Class_Minion_Swarm eq || enttype target> player eq || !
-		DisplayFloat         "P2440464263"
-	}
-
-	AttribMod
-	{
-		Name                 "FieryEmbrace"                
-		Table                "Melee_Damage"                
-		Aspect               kAbs
-		Attrib               kFire
-		Target               kTarget
-		Scale                0.882
-		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kTrue
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               0.000
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P780135143"
-		DisplayVictimHit     "P125394365"
-		StackType            kStack
-		ContinuingFX         POWERS/FireControl/CindersHit.fx
+		StackType            kOverlap
+		Reward               Temporary_Powers.Temporary_Powers.Rally
 	}
 }
 
@@ -846,6 +617,28 @@ Power Warden_Melee.Martial_Arts.Focus_Chi
 		CancelOnMiss         kFalse
 		StackType            kStack
 	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kAbs
+		Attrib               kGrantPower
+		Target               kSelf
+		Scale                1
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kOverlap
+		Reward               Temporary_Powers.Temporary_Powers.Rally
+	}
 }
 
 Power Warden_Melee.Martial_Arts.Crane_Kick
@@ -978,101 +771,24 @@ Power Warden_Melee.Martial_Arts.Crane_Kick
 
 	AttribMod
 	{
-		Name                 "ECCritModPlayer"             
-		Table                "Melee_Damage"                
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
 		Aspect               kAbs
-		Attrib               kSmashing
-		Target               kTarget
-		Scale                2.49666864933903
+		Attrib               kGrantPower
+		Target               kSelf
+		Scale                1
 		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kTrue
+		AllowStrength        kFalse
+		AllowResistance      kFalse
 		Delay                0
 		Duration             0
 		Magnitude            1
 		Period               0
-		Chance               0.050
+		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P374533506"
-		DisplayVictimHit     "P329706590"
-		StackType            kStack
-		Requires             enttype target> player eq
-		DisplayFloat         "P2440464263"
-	}
-
-	AttribMod
-	{
-		Name                 "ECCritModSmall"              
-		Table                "Melee_Damage"                
-		Aspect               kAbs
-		Attrib               kSmashing
-		Target               kTarget
-		Scale                1.96
-		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kTrue
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               0.050
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P374533506"
-		DisplayVictimHit     "P329706590"
-		StackType            kStack
-		Requires             arch target> Class_Minion_Grunt eq  arch target> Class_Minion_Small eq ||  arch target> Class_Minion_Pets eq ||  arch target> Class_Minion_Swarm eq ||
-		DisplayFloat         "P2440464263"
-	}
-
-	AttribMod
-	{
-		Name                 "ECCritModLarge"              
-		Table                "Melee_Damage"                
-		Aspect               kAbs
-		Attrib               kSmashing
-		Target               kTarget
-		Scale                1.96
-		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kTrue
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               0.100
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P374533506"
-		DisplayVictimHit     "P329706590"
-		StackType            kStack
-		Requires             arch target> Class_Minion_Grunt eq  arch target> Class_Minion_Small eq ||  arch target> Class_Minion_Pets eq ||  arch target> Class_Minion_Swarm eq || enttype target> player eq || !
-		DisplayFloat         "P2440464263"
-	}
-
-	AttribMod
-	{
-		Name                 "FieryEmbrace"                
-		Table                "Melee_Damage"                
-		Aspect               kAbs
-		Attrib               kFire
-		Target               kTarget
-		Scale                0.882
-		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kTrue
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               0.000
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P780135143"
-		DisplayVictimHit     "P125394365"
-		StackType            kStack
-		ContinuingFX         POWERS/FireControl/CindersHit.fx
+		StackType            kOverlap
+		Reward               Temporary_Powers.Temporary_Powers.Rally
 	}
 }
 
@@ -1395,81 +1111,6 @@ Power Warden_Melee.Martial_Arts.Crippling_Axe_Kick
 
 	AttribMod
 	{
-		Name                 "ECCritModPlayer"             
-		Table                "Melee_Damage"                
-		Aspect               kAbs
-		Attrib               kSmashing
-		Target               kTarget
-		Scale                2.48525675607136
-		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kTrue
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               0.050
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P374533506"
-		DisplayVictimHit     "P329706590"
-		StackType            kStack
-		Requires             enttype target> player eq
-		DisplayFloat         "P2440464263"
-	}
-
-	AttribMod
-	{
-		Name                 "ECCritModSmall"              
-		Table                "Melee_Damage"                
-		Aspect               kAbs
-		Attrib               kSmashing
-		Target               kTarget
-		Scale                2.12
-		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kTrue
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               0.050
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P374533506"
-		DisplayVictimHit     "P329706590"
-		StackType            kStack
-		Requires             arch target> Class_Minion_Grunt eq  arch target> Class_Minion_Small eq ||  arch target> Class_Minion_Pets eq ||  arch target> Class_Minion_Swarm eq ||
-		DisplayFloat         "P2440464263"
-	}
-
-	AttribMod
-	{
-		Name                 "ECCritModLarge"              
-		Table                "Melee_Damage"                
-		Aspect               kAbs
-		Attrib               kSmashing
-		Target               kTarget
-		Scale                2.12
-		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kTrue
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               0.100
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P374533506"
-		DisplayVictimHit     "P329706590"
-		StackType            kStack
-		Requires             arch target> Class_Minion_Grunt eq  arch target> Class_Minion_Small eq ||  arch target> Class_Minion_Pets eq ||  arch target> Class_Minion_Swarm eq || enttype target> player eq || !
-		DisplayFloat         "P2440464263"
-	}
-
-	AttribMod
-	{
 		Name                 "Debuff_Def"                  
 		Table                "Melee_Debuff_Def"            
 		Aspect               kCur
@@ -1492,26 +1133,24 @@ Power Warden_Melee.Martial_Arts.Crippling_Axe_Kick
 
 	AttribMod
 	{
-		Name                 "FieryEmbrace"                
-		Table                "Melee_Damage"                
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
 		Aspect               kAbs
-		Attrib               kFire
-		Target               kTarget
-		Scale                0.954
+		Attrib               kGrantPower
+		Target               kSelf
+		Scale                1
 		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kTrue
+		AllowStrength        kFalse
+		AllowResistance      kFalse
 		Delay                0
 		Duration             0
 		Magnitude            1
 		Period               0
-		Chance               0.000
+		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P780135143"
-		DisplayVictimHit     "P125394365"
-		StackType            kStack
-		ContinuingFX         POWERS/FireControl/CindersHit.fx
+		StackType            kOverlap
+		Reward               Temporary_Powers.Temporary_Powers.Rally
 	}
 }
 
@@ -1642,101 +1281,24 @@ Power Warden_Melee.Martial_Arts.Dragons_Tail
 
 	AttribMod
 	{
-		Name                 "ECCritModPlayer"             
-		Table                "Melee_Damage"                
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
 		Aspect               kAbs
-		Attrib               kSmashing
-		Target               kTarget
-		Scale                1.45637495035085
+		Attrib               kGrantPower
+		Target               kSelf
+		Scale                1
 		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kTrue
+		AllowStrength        kFalse
+		AllowResistance      kFalse
 		Delay                0
 		Duration             0
 		Magnitude            1
 		Period               0
-		Chance               0.050
+		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P374533506"
-		DisplayVictimHit     "P329706590"
-		StackType            kStack
-		Requires             enttype target> player eq
-		DisplayFloat         "P2440464263"
-	}
-
-	AttribMod
-	{
-		Name                 "ECCritModSmall"              
-		Table                "Melee_Damage"                
-		Aspect               kAbs
-		Attrib               kSmashing
-		Target               kTarget
-		Scale                1.18
-		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kTrue
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               0.050
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P374533506"
-		DisplayVictimHit     "P329706590"
-		StackType            kStack
-		Requires             arch target> Class_Minion_Grunt eq  arch target> Class_Minion_Small eq ||  arch target> Class_Minion_Pets eq ||  arch target> Class_Minion_Swarm eq ||
-		DisplayFloat         "P2440464263"
-	}
-
-	AttribMod
-	{
-		Name                 "ECCritModLarge"              
-		Table                "Melee_Damage"                
-		Aspect               kAbs
-		Attrib               kSmashing
-		Target               kTarget
-		Scale                1.18
-		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kTrue
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               0.100
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P374533506"
-		DisplayVictimHit     "P329706590"
-		StackType            kStack
-		Requires             arch target> Class_Minion_Grunt eq  arch target> Class_Minion_Small eq ||  arch target> Class_Minion_Pets eq ||  arch target> Class_Minion_Swarm eq || enttype target> player eq || !
-		DisplayFloat         "P2440464263"
-	}
-
-	AttribMod
-	{
-		Name                 "FieryEmbrace"                
-		Table                "Melee_Damage"                
-		Aspect               kAbs
-		Attrib               kFire
-		Target               kTarget
-		Scale                0.531
-		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kTrue
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               0.000
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P780135143"
-		DisplayVictimHit     "P125394365"
-		StackType            kStack
-		ContinuingFX         POWERS/FireControl/CindersHit.fx
+		StackType            kOverlap
+		Reward               Temporary_Powers.Temporary_Powers.Rally
 	}
 }
 
@@ -1878,80 +1440,6 @@ Power Warden_Melee.Martial_Arts.Eagles_Claw
 
 	AttribMod
 	{
-		Name                 "BossCrit"                    
-		Table                "Melee_Damage"                
-		Aspect               kAbs
-		Attrib               kSmashing
-		Target               kTarget
-		Scale                3.3614365614006
-		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kTrue
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               0.150
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P1900078763"
-		DisplayVictimHit     "P3968747342"
-		StackType            kStack
-		Requires             enttype target> player eq
-		DisplayFloat         "P2440464263"
-	}
-
-	AttribMod
-	{
-		Name                 "BossCrit"                    
-		Table                "Melee_Damage"                
-		Aspect               kAbs
-		Attrib               kSmashing
-		Target               kTarget
-		Scale                2.28
-		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kTrue
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               0.150
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P1900078763"
-		DisplayVictimHit     "P3968747342"
-		StackType            kStack
-		Requires             enttype target> critter eq
-		DisplayFloat         "P2440464263"
-	}
-
-	AttribMod
-	{
-		Name                 "FieryEmbrace"                
-		Table                "Melee_Damage"                
-		Aspect               kAbs
-		Attrib               kFire
-		Target               kTarget
-		Scale                1.026
-		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kTrue
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               0.000
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P780135143"
-		DisplayVictimHit     "P125394365"
-		StackType            kStack
-		ContinuingFX         POWERS/FireControl/CindersHit.fx
-	}
-
-	AttribMod
-	{
 		Name                 "Ones"                        
 		Table                "Melee_Ones"                  
 		Aspect               kCur
@@ -2018,5 +1506,27 @@ Power Warden_Melee.Martial_Arts.Eagles_Claw
 		StackType            kReplace
 		Reward               ECCritModLarge
 		AllowCombatMods      kFALSE
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kAbs
+		Attrib               kGrantPower
+		Target               kSelf
+		Scale                1
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kOverlap
+		Reward               Temporary_Powers.Temporary_Powers.Rally
 	}
 }

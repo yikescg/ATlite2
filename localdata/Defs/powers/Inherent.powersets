@@ -1100,7 +1100,7 @@ PowerSet Inherent.Inherent
 	MinDifficulty 2
 	MaxDifficulty 9999
 
-	Powers Inherent.Inherent.Attendance
+	Powers Inherent.Inherent.Rally
 	Available 0
 	AIMaxLevel 0
 	AIMinRankCon -9999

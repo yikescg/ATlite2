@@ -19320,10 +19320,10 @@ Power Inherent.Inherent.Gauntlet
 	}
 }
 
-Power Inherent.Inherent.Attendance
+Power Inherent.Inherent.Rally
 {
-	Name                 "Attendance"                   
-	DisplayName          "Attendance"
+	Name                 "Rally"                   
+	DisplayName          "P2803601970"
 	BuyRequires          $archetype @Class_Warden ==
 	ActivateRequires     $archetype @Class_Warden ==
 	Type                 kAuto
@@ -19343,9 +19343,9 @@ Power Inherent.Inherent.Attendance
 	Radius               0
 	Arc                  0
 	IgnoreStrength       True
-	DisplayShortHelp     "P2159356375"
-	DisplayHelp          "P604053549"
-	IconName             "InherentPeacebringer_InterSpacialLink.tga"
+	DisplayShortHelp     "P6969356375"
+	DisplayHelp          "P606969549"
+	IconName             "Inherent_WardenRally.tga"
 	TimeToConfirm        0
 	ShowInManage         kFalse
 	MaxBoosts            0
@@ -19357,7 +19357,7 @@ Power Inherent.Inherent.Attendance
 		Aspect               kCur
 		Attrib               kMelee_Attack
 		Target               kSelf
-		Scale                1.8
+		Scale                1.5
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -19379,7 +19379,7 @@ Power Inherent.Inherent.Attendance
 		Aspect               kCur
 		Attrib               kMelee_Attack
 		Target               kSelf
-		Scale                -0.6
+		Scale                -0.5
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -19402,7 +19402,7 @@ Power Inherent.Inherent.Attendance
 		Aspect               kCur
 		Attrib               kMelee_Attack
 		Target               kSelf
-		Scale                -0.6
+		Scale                -0.5
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -19425,7 +19425,7 @@ Power Inherent.Inherent.Attendance
 		Aspect               kCur
 		Attrib               kMelee_Attack
 		Target               kSelf
-		Scale                -0.6
+		Scale                -0.5
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -19448,7 +19448,7 @@ Power Inherent.Inherent.Attendance
 		Aspect               kCur
 		Attrib               kRanged_Attack
 		Target               kSelf
-		Scale                1.8
+		Scale                1.5
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -19470,7 +19470,7 @@ Power Inherent.Inherent.Attendance
 		Aspect               kCur
 		Attrib               kRanged_Attack
 		Target               kSelf
-		Scale                -0.6
+		Scale                -0.5
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -19493,7 +19493,7 @@ Power Inherent.Inherent.Attendance
 		Aspect               kCur
 		Attrib               kRanged_Attack
 		Target               kSelf
-		Scale                -0.6
+		Scale                -0.5
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -19516,7 +19516,7 @@ Power Inherent.Inherent.Attendance
 		Aspect               kCur
 		Attrib               kRanged_Attack
 		Target               kSelf
-		Scale                -0.6
+		Scale                -0.5
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -19539,7 +19539,7 @@ Power Inherent.Inherent.Attendance
 		Aspect               kCur
 		Attrib               kAOE_Attack
 		Target               kSelf
-		Scale                1.8
+		Scale                1.5
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -19561,7 +19561,7 @@ Power Inherent.Inherent.Attendance
 		Aspect               kCur
 		Attrib               kAOE_Attack
 		Target               kSelf
-		Scale                0.37
+		Scale                0.35
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -19584,7 +19584,7 @@ Power Inherent.Inherent.Attendance
 		Aspect               kCur
 		Attrib               kAOE_Attack
 		Target               kSelf
-		Scale                0.37
+		Scale                0.35
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -19607,7 +19607,7 @@ Power Inherent.Inherent.Attendance
 		Aspect               kCur
 		Attrib               kAOE_Attack
 		Target               kSelf
-		Scale                0.37
+		Scale                0.35
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -19630,7 +19630,7 @@ Power Inherent.Inherent.Attendance
 		Aspect               kCur
 		Attrib               kAOE_Attack
 		Target               kSelf
-		Scale                0.37
+		Scale                0.35
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse

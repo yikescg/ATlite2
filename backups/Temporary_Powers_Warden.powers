@@ -1,0 +1,158 @@
+
+Power Temporary_Powers.Temporary_Powers.Rally
+{
+	Name                 "Rally"               
+	DisplayName          "P2803601970"
+	Type                 kAuto
+	Accuracy             1
+	EntsAffected         kFriend, kCaster
+	EntsAutoHit          kFriend, kCaster
+	Target               kCaster
+	Range                0
+	EnduranceCost        0
+	IdeaCost             0
+	InterruptTime        0
+	TimeToActivate       0
+	RechargeTime         0
+	ActivatePeriod       0
+	EffectArea           kSphere
+	Radius               25
+	Arc                  0
+	LifeTime             20
+	StackingUsage        kTrue
+	MaxLifeTime          20
+	DisplayShortHelp     "P6969356375"
+	DisplayHelp          "P606969549"
+	IconName             "Inherent_BlasterDesperation.tga"
+	TimeToConfirm        0
+	ShowInManage         kFalse
+	ShowInInventory      kFalse
+	NumAllowed           1
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kCur
+		Attrib               kRecovery
+		Target               kTarget
+		Scale                0.15
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             15
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kOverlap
+	}
+
+		AttribMod
+	{
+		Name                 "Heal"                        
+		Table                "Ranged_Heal"                 
+		Aspect               kAbs
+		Attrib               kHeal
+		Target               kTarget
+		Scale                0.3
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P3262186852"
+		DisplayVictimHit     "P1319995399"
+		StackType            kStack
+	}
+
+		AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kStr
+		Attrib               kRechargeTime
+		Target               kTarget
+		Scale                0.95
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             15
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+	}
+
+		AttribMod
+	{
+		Name                 "Res_Boolean"                 
+		Table                "Ranged_Res_Boolean"          
+		Aspect               kCur
+		Attrib               kStun
+		Target               kSelf
+		Scale                -5
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             15
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kOverlap
+	}
+
+		AttribMod
+	{
+		Name                 "Res_Boolean"                 
+		Table                "Ranged_Res_Boolean"          
+		Aspect               kCur
+		Attrib               kSleep
+		Target               kTarget
+		Scale                -5
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             15
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kOverlap
+
+		AttribMod
+	{
+		Name                 "Res_Boolean"                 
+		Table                "Ranged_Res_Boolean"          
+		Aspect               kCur
+		Attrib               kHeld
+		Target               kTarget
+		Scale                -5
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kOverlap
+	}
+}
