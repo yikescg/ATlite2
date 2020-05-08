@@ -20,6 +20,5 @@ PowerCategory Warden_Melee
 	PowerSets Warden_Melee.Staff_Fighting
 	PowerSets Warden_Melee.Brawling
 	PowerSets Warden_Melee.War_Mace
-	PowerSets Warden_Melee.Titan_Weapons
 }
 

@@ -1,0 +1,3 @@
+KNOWN ISSUES:
+Titan Weapons - Follow Through is the only attack that grants stacks of rally
+Trick Arrow - When used with other weapon sets  (e.g. Katana) the bow is replaced with the other weapon
