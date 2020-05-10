@@ -357,9 +357,9 @@ Power Warden_Buff.Force_Field.Deflection_Shield
 	ModesDisallowed      kDisable_All
 	Type                 kClick
 	Accuracy             1
-	EntsAffected         kFriend
-	EntsAutoHit          kFriend
-	Target               kFriend
+	EntsAffected         kFriend, kCaster
+	EntsAutoHit          kFriend, kCaster
+	Target               kCaster
 	Range                80
 	EnduranceCost        7.8
 	IdeaCost             0
@@ -630,9 +630,9 @@ Power Warden_Buff.Force_Field.Insulation_Shield
 	ModesDisallowed      kDisable_All
 	Type                 kClick
 	Accuracy             1
-	EntsAffected         kFriend
-	EntsAutoHit          kFriend
-	Target               kFriend
+	EntsAffected         kFriend, kCaster
+	EntsAutoHit          kFriend, kCaster
+	Target               kCaster
 	Range                80
 	EnduranceCost        7.8
 	IdeaCost             0

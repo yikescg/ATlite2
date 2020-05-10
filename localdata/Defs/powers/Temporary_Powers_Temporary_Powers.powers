@@ -58992,30 +58992,30 @@ Power Temporary_Powers.Temporary_Powers.Rally
 	EffectArea           kSphere
 	Radius               25
 	Arc                  0
-	LifeTime             20
+	LifeTime             30
 	StackingUsage        kTrue
-	MaxLifeTime          20
+	MaxLifeTime          30
 	DisplayShortHelp     "P6969356375"
 	DisplayHelp          "P606969549"
 	IconName             "Inherent_WardenRally_AoE.tga"
 	TimeToConfirm        0
 	ShowInManage         kFalse
 	ShowInInventory      kFalse
-	NumAllowed           16
+	NumAllowed           10
 
 	AttribMod
 	{
-		Name                 "Ones"                        
+		Name                 "Ones"
 		Table                "Ranged_Ones"                 
 		Aspect               kCur
-		Attrib               kRecovery
+		Attrib               kEnduranceDiscount
 		Target               kTarget
-		Scale                0.07
+		Scale                0.03
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
 		Delay                0
-		Duration             20
+		Duration             30
 		Magnitude            1
 		Period               0
 		Chance               1
@@ -59026,17 +59026,17 @@ Power Temporary_Powers.Temporary_Powers.Rally
 
 		AttribMod
 	{
-		Name                 "Heal"                        
-		Table                "Ranged_Heal"                 
-		Aspect               kAbs
-		Attrib               kHeal
-		Target               kTarget
-		Scale                0.4
+		Name                 "Buff_Def"                    
+		Table                "Melee_Buff_Def"              
+		Aspect               kCur
+		Attrib               kAOE_Attack
+		Target               kSelf
+		Scale                0.17
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kTrue
 		Delay                0
-		Duration             0
+		Duration             30
 		Magnitude            1
 		Period               0
 		Chance               1
@@ -59052,12 +59052,12 @@ Power Temporary_Powers.Temporary_Powers.Rally
 		Aspect               kStr
 		Attrib               kRechargeTime
 		Target               kTarget
-		Scale                0.07
+		Scale                0.012
 		Type                 kMagnitude
 		AllowStrength        kFalse
 		AllowResistance      kFalse
 		Delay                0
-		Duration             20
+		Duration             30
 		Magnitude            1
 		Period               0
 		Chance               1
@@ -59073,12 +59073,12 @@ Power Temporary_Powers.Temporary_Powers.Rally
 		Aspect               kCur
 		Attrib               kStun
 		Target               kSelf
-		Scale                -3
+		Scale                -2
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
 		Delay                0
-		Duration             20
+		Duration             30
 		Magnitude            1
 		Period               0
 		Chance               1
@@ -59094,12 +59094,12 @@ Power Temporary_Powers.Temporary_Powers.Rally
 		Aspect               kCur
 		Attrib               kSleep
 		Target               kSelf
-		Scale                -3
+		Scale                -2
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
 		Delay                0
-		Duration             20
+		Duration             30
 		Magnitude            1
 		Period               0
 		Chance               1
@@ -59114,7 +59114,7 @@ Power Temporary_Powers.Temporary_Powers.Rally
 		Aspect               kCur
 		Attrib               kHeld
 		Target               kSelf
-		Scale                -3
+		Scale                -2
 		Type                 kMagnitude
 		AllowStrength        kFalse
 		AllowResistance      kFalse
