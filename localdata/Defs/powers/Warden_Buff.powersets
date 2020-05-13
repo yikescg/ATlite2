@@ -270,7 +270,7 @@ PowerSet Warden_Buff.Kinetics
 	MinDifficulty 2
 	MaxDifficulty 9999
 
-		Powers Warden_Buff.Kinetics.Siphon_Speed
+	Powers Warden_Buff.Kinetics.Siphon_Speed
 	Available 5
 	AIMaxLevel 0
 	AIMinRankCon -9999
@@ -278,7 +278,7 @@ PowerSet Warden_Buff.Kinetics
 	MinDifficulty 2
 	MaxDifficulty 9999
 
-	Powers Warden_Buff.Kinetics.Kinetic_Crawl
+	Powers Warden_Buff.Kinetics.Repel
 	Available 9
 	AIMaxLevel 0
 	AIMinRankCon -9999

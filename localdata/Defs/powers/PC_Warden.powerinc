@@ -1,0 +1,208 @@
+Power Inherent.Inherent.Rally
+{
+	Name                 "Rally"                   
+	DisplayName          "P2803601970"
+	BuyRequires          $archetype @Class_Warden ==
+	ActivateRequires     $archetype @Class_Warden ==
+	Type                 kAuto
+	Accuracy             1
+	EntsAffected         kCaster
+	EntsAutoHit          kCaster
+	Target               kCaster
+	TargetVisibility     kNone
+	Range                0
+	EnduranceCost        0
+	IdeaCost             0
+	InterruptTime        0
+	TimeToActivate       0
+	RechargeTime         0
+	ActivatePeriod       1
+	EffectArea           kCharacter
+	Radius               0
+	Arc                  0
+	IgnoreStrength       True
+	DisplayShortHelp     "P6969356376"
+	DisplayHelp          "P606969549"
+	IconName             "Inherent_WardenRally.tga"
+	TimeToConfirm        0
+	ShowInManage         kFalse
+	MaxBoosts            0
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kCur
+		Attrib               kNull
+		Target               kTarget
+		Scale                1
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0.75
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		AllowCombatMods      kFalse
+	}
+}
+
+Power Temporary_Powers.Temporary_Powers.Rally
+{
+	Name                 "Rally"               
+	DisplayName          "P2803601970"
+	Type                 kAuto
+	Accuracy             1
+	EntsAffected         kFriend, kCaster
+	EntsAutoHit          kFriend, kCaster
+	Target               kCaster
+	Range                0
+	EnduranceCost        0
+	IdeaCost             0
+	InterruptTime        0
+	TimeToActivate       0.25
+	RechargeTime         0
+	ActivatePeriod       21
+	EffectArea           kSphere
+	Radius               25
+	Arc                  0
+	LifeTime             30
+	StackingUsage        kTrue
+	MaxLifeTime          30
+	DisplayShortHelp     "P6969356375"
+	DisplayHelp          "P606969549"
+	IconName             "Inherent_WardenRally_AoE.tga"
+	TimeToConfirm        0
+	ShowInManage         kFalse
+	ShowInInventory      kFalse
+	NumAllowed           10
+
+	AttribMod
+	{
+		Name                 "Ones"
+		Table                "Ranged_Ones"                 
+		Aspect               kCur
+		Attrib               kEnduranceDiscount
+		Target               kTarget
+		Scale                0.03
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             30
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+	}
+
+		AttribMod
+	{
+		Name                 "Buff_Def"                    
+		Table                "Melee_Buff_Def"              
+		Aspect               kCur
+		Attrib               kAOE_Attack
+		Target               kSelf
+		Scale                0.17
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             30
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+	}
+
+		AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kStr
+		Attrib               kRechargeTime
+		Target               kTarget
+		Scale                0.012
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             30
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+	}
+
+		AttribMod
+	{
+		Name                 "Res_Boolean"                 
+		Table                "Ranged_Res_Boolean"          
+		Aspect               kCur
+		Attrib               kStun
+		Target               kSelf
+		Scale                -2
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             30
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+	}
+
+		AttribMod
+	{
+		Name                 "Res_Boolean"                 
+		Table                "Ranged_Res_Boolean"          
+		Aspect               kCur
+		Attrib               kSleep
+		Target               kSelf
+		Scale                -2
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             30
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+	}
+		AttribMod
+	{
+		Name                 "Res_Boolean"                 
+		Table                "Ranged_Res_Boolean"          
+		Aspect               kCur
+		Attrib               kHeld
+		Target               kSelf
+		Scale                -2
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             20
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+	}
+}

@@ -1,9 +1,9 @@
-1.0.0
-
-Introduced a new archetype
 
 	Warden: A Melee/Support archetype that uses melee damage and support secondary to dish out buffs, debuffs, and heals in close quarters.
-		Description: "The Warden tends to assist his allies in the fray, where his close quarters combat abilities are able to shine in tandem with his considerable support capabilities. He will unleash substantial melee damage while supporting allies and weakening foes in the immediate area. The Warden's alertness and ability to evade attacks depends on how many allies he has fighting alongside him, gaining a bonus to melee and ranged defense when alone, which is sacrificed for greater protection against AoEs in larger teams."
+	The Warden is a a support archetype meant to play within melee range, near other melee archetypes, focusing specifically on supporting those other melee range fighters. The Warden's damage is lower than other melee combatants, but makes up for this lower damage output with a stacking self and ally buff they gain for each attack they successfully land with their primary set. They're relatively fragile, but able to disengage from most opponents allowing them to redirect the aggro to their more capable teammates. Their focus is on dishing out as many melee attacks and support abilities in melee range as possible.
+	
+	
+		In-game Description: "The Warden tends to assist his allies in the fray, where his close quarters combat abilities are able to shine in tandem with his considerable support capabilities. He will unleash substantial melee damage while supporting allies and weakening foes in the immediate area. The Warden's alertness and ability to evade attacks depends on how many allies he has fighting alongside him, gaining a bonus to melee and ranged defense when alone, which is sacrificed for greater protection against AoEs in larger teams."
 		*Class attribute mods and tables currently reflect those of the corruptor.
 		
 		Powersets:
@@ -26,7 +26,7 @@ Introduced a new archetype
 			War Mace
 
 		Inherent: Rally: A stacking PBAoE self and ally buff that procs every time you strike with an attack in your primary set
-			Description: "The Warden's prowess in close quarters combat, and ability to support their allies and weaken their foes is a potent combination, but tremendously taxing and dangerous. The Warden has to be acutely aware of their surroundings and rise to the occasion. The Warden is able to rally and motivate their teammates, helping them shrug off wounds and avoid fatigue. For every attack the Warden dishes out, they and their teammates all receive a stacking endurance discount, and increase to attack rate. The Warden themself also receives protection against mezzes and AoE attacks for every attack they deal, allowing them to stay in the fray with less fear."
+			In-game Description: "The Warden's prowess in close quarters combat, and ability to support their allies and weaken their foes is a potent combination, but tremendously taxing and dangerous. The Warden has to be acutely aware of their surroundings and rise to the occasion. The Warden is able to rally and motivate their teammates, helping them shrug off wounds and avoid fatigue. For every attack the Warden dishes out, they and their teammates all receive a stacking endurance discount, and increase to attack rate. The Warden themself also receives protection against mezzes and AoE attacks for every attack they deal, allowing them to stay in the fray with less fear."
 				Effects (max 10 stacks):
 				2.5% endurance discount for all powers per stack (Self and Ally)
 				1.2% recharge speed increase for all powers per stack (Self and Ally)

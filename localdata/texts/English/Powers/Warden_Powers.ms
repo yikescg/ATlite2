@@ -34,5 +34,6 @@
 "P2803601970" "Rally"
 // Power Mouse-Over Text :
 "P6969356375" "+DEF, Mez Protection (Self), +Endurance Discount, +Rech (Self and Allies), +Motivation"
+"P6969356376" "Generate stacks of Rally"
 // Power Help Text :
 "P606969549" "The Warden's prowess in close quarters combat, and ability to support their allies and weaken their foes is a potent combination, but tremendously taxing and dangerous. The Warden has to be acutely aware of their surroundings and rise to the occasion. The Warden is able to rally and motivate their teammates, helping them shrug off wounds and avoid fatigue. For every attack the Warden dishes out, they and their teammates all receive a stacking endurance discount, and increase to attack rate. The Warden themself also receives protection against mezzes and AoE attacks for every attack they deal, allowing them to stay in the fray with less fear."

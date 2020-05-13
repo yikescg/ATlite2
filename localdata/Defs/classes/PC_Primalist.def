@@ -3,11 +3,11 @@
 Class
 {
 	Name					"Class_Warden"
-	DisplayName				"Warden"
+	DisplayName				"P3869848969"
 	PrimaryCategory			"Warden_Melee"
 	SecondaryCategory		"Warden_Buff"
 	PowerPoolCategory		"Pool"
-	DisplayShortHelp		"Help your allies, weaken your foes. Focuses on close quarters"
+	DisplayShortHelp		"P3899878769"
 	DisplayHelp				"P3869696969"
 	Icon					"archetypeicon_warden.tga"
 	AllowedOrigins			Science, Magic, Natural, Mutation, Technology
