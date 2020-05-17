@@ -3,7 +3,7 @@
 Power Warden_Melee.Broad_Sword.Hack
 {
 	Name                 "Hack"                        
-	DisplayName          "P1969692334"
+	DisplayName          "P2722205293"
 	ModesDisallowed      kDisable_All
 	Type                 kClick
 	Accuracy             1.05
@@ -27,8 +27,8 @@ Power Warden_Melee.Broad_Sword.Hack
 	StrengthsDisallowed  kRange
 	VisualFX             "menu\Powers\AnimFX\Sword_Down_NoGeo.pfx"
 	include              menu\Powers\AnimFX\Sword_Down_NoGeo.pfx
-	DisplayShortHelp     "P389273554"
-	DisplayHelp          "P1092318"
+	DisplayShortHelp     "P2379971826"
+	DisplayHelp          "P4293504502"
 	IconName             "Sword_Hack.tga"
 	TimeToConfirm        0
 	DisplayTargetShortHelp "P373215750"
