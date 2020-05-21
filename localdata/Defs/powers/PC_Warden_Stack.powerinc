@@ -26,7 +26,7 @@ Power Temporary_Powers.Temporary_Powers.Rally
 	TimeToConfirm        0
 	ShowInManage         kFalse
 	ShowInInventory      kFalse
-	NumAllowed           10
+	NumAllowed           12
 
 	AttribMod
 	{
@@ -90,65 +90,4 @@ Power Temporary_Powers.Temporary_Powers.Rally
 		CancelOnMiss         kFalse
 		StackType            kStack
 	}
-
-		AttribMod
-	{
-		Name                 "Res_Boolean"                 
-		Table                "Ranged_Res_Boolean"          
-		Aspect               kCur
-		Attrib               kStun
-		Target               kSelf
-		Scale                -2
-		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kFalse
-		Delay                0
-		Duration             30
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kStack
-	}
-
-		AttribMod
-	{
-		Name                 "Res_Boolean"                 
-		Table                "Ranged_Res_Boolean"          
-		Aspect               kCur
-		Attrib               kSleep
-		Target               kSelf
-		Scale                -2
-		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kFalse
-		Delay                0
-		Duration             30
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kStack
-	}
-		AttribMod
-	{
-		Name                 "Res_Boolean"                 
-		Table                "Ranged_Res_Boolean"          
-		Aspect               kCur
-		Attrib               kHeld
-		Target               kSelf
-		Scale                -2
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kFalse
-		Delay                0
-		Duration             20
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kStack
-	}
+}

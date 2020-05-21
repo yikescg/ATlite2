@@ -139,7 +139,7 @@ Power Warden_Melee.Claws.Swipe
 		Delay                0
 		Duration             0
 		Magnitude            1
-		Period               0
+		Period               4
 		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse

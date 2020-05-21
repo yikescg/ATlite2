@@ -49,4 +49,76 @@ Power Inherent.Inherent.Rally
 		StackType            kReplace
 		AllowCombatMods      kFalse
 	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kAbs
+		Attrib               kDesignerStatus
+		Target               kSelf
+		Scale                -1
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             5.00
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayVictimHit     "P2290902865"
+		StackType            kReplace
+		Requires             Temporary_Powers.Temporary_Powers.Rally source.ownPowerNum? 3 ==
+		AllowCombatMods      kFalse
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kAbs
+		Attrib               kDesignerStatus
+		Target               kSelf
+		Scale                -1
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             5.00
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayVictimHit     "P2290902866"
+		StackType            kReplace
+		Requires             Temporary_Powers.Temporary_Powers.Rally source.ownPowerNum? 6 ==
+		AllowCombatMods      kFalse
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kAbs
+		Attrib               kDesignerStatus
+		Target               kSelf
+		Scale                -1
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             5.00
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayVictimHit     "P2290902867"
+		StackType            kReplace
+		Requires             Temporary_Powers.Temporary_Powers.Rally source.ownPowerNum? 12 ==
+		AllowCombatMods      kFalse
+	}
 }
