@@ -1,6 +1,6 @@
 Power Inherent.Inherent.Rally_Display
 {
-	Name                 "Defiance"                    
+	Name                 "Rally_Display"                    
 	DisplayName          "P2803601970"
 	BuyRequires          $archetype @Class_Warden ==
 	ActivateRequires     $archetype @Class_Warden ==
