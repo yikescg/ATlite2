@@ -470,6 +470,53 @@ Power Warden_Buff.Force_Field.Deflection_Shield
 		CancelOnMiss         kFalse
 		StackType            kReplace
 	}
+
+//Rally
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kCur
+		Attrib               kAbsorb
+		Target               kTarget
+		Scale                0.10
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kOverlap
+		Requires             Temporary_Powers.Temporary_Powers.Rally_Active source.ownPower? eq
+		AllowCombatMods      kFalse
+	}
+
+//	AttribMod
+//	{
+//		Name                 "Ones"                        
+//		Table                "Ranged_Ones"                 
+//		Aspect               kMax
+//		Attrib               kAbsorb
+//		Target               kTarget
+//		Scale                10
+//		Type                 kMagnitude
+//		AllowStrength        kTrue
+//		AllowResistance      kFalse
+//		Delay                0
+//		Duration             240
+//		Magnitude            1
+//		Period               0
+//		Chance               1
+//		NearGround           kFalse
+//		CancelOnMiss         kFalse
+//		StackType            kOverlap
+//		Requires             Temporary_Powers.Temporary_Powers.Rally_Active source.ownPower? eq
+//		AllowCombatMods      kFALSE
+//	}
 }
 
 Power Warden_Buff.Force_Field.Force_Bolt

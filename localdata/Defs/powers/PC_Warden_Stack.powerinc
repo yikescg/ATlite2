@@ -1,7 +1,7 @@
 Power Temporary_Powers.Temporary_Powers.Rally
 {
 	Name                 "Rally"               
-	DisplayName          "P2803601970"
+	DisplayName          "P2803601971"
 	Type                 kAuto
 	Accuracy             1
 	EntsAffected         kFriend, kCaster
@@ -35,7 +35,7 @@ Power Temporary_Powers.Temporary_Powers.Rally
 		Aspect               kStr
 		Attrib               kEnduranceDiscount
 		Target               kTarget
-		Scale                0.025
+		Scale                0.015
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -89,5 +89,80 @@ Power Temporary_Powers.Temporary_Powers.Rally
 		NearGround           kFalse
 		CancelOnMiss         kFalse
 		StackType            kStack
+	}
+}
+
+Power Temporary_Powers.Temporary_Powers.Rally_Active
+{
+	Name                 "Rally_Active"               
+	DisplayName          "P2803601970"
+	Type                 kAuto
+	Accuracy             1
+	EntsAffected         kCaster
+	EntsAutoHit          kCaster
+	Target               kCaster
+	Range                0
+	EnduranceCost        0
+	IdeaCost             0
+	InterruptTime        0
+	TimeToActivate       0.25
+	RechargeTime         0
+	ActivatePeriod       21
+	EffectArea           kSphere
+	Radius               25
+	Arc                  0
+	LifeTime             90
+	StackingUsage        kFalse
+	MaxLifeTime          90
+	DisplayShortHelp     "P6969356375"
+	DisplayHelp          "P606969549"
+	IconName             "Inherent_WardenRally.tga"
+	TimeToConfirm        0
+	ShowInManage         kFalse
+	ShowInInventory      kFalse
+	NumAllowed           1
+
+	AttribMod
+	{
+		Name                 "Ones"
+		Table                "Ranged_Ones"                 
+		Aspect               kStr
+		Attrib               kEnduranceDiscount
+		Target               kTarget
+		Scale                0.12
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kAbs
+		Attrib               kDesignerStatus
+		Target               kSelf
+		Scale                -1
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayVictimHit     "P2290902866"
+		StackType            kReplace
+		AllowCombatMods      kFalse
 	}
 }

@@ -3694,15 +3694,7 @@ PowerSet Temporary_Powers.Temporary_Powers
 	MinDifficulty 2
 	MaxDifficulty 9999
 	
-	Powers Temporary_Powers.Temporary_Powers.Rally
-	Available 0
-	AIMaxLevel 0
-	AIMinRankCon -9999
-	AIMaxRankCon 9999
-	MinDifficulty 2
-	MaxDifficulty 9999
-
-	Powers Temporary_Powers.Temporary_Powers.Rally_Active
+	Powers Inherent.Inherent.Rally
 	Available 0
 	AIMaxLevel 0
 	AIMinRankCon -9999
