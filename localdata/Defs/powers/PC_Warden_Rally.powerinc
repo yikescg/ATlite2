@@ -164,3 +164,12 @@ Power Inherent.Inherent.Rally_Click
 		Reward               Temporary_Powers.Temporary_Powers.Rally_Active
 	}
 }
+
+//Add these lines to attributes for Rally mode buffs
+//
+// Rally Border
+//	HighlightEval        Temporary_Powers.Temporary_Powers.Rally_Active ownPowerNum? 1 ==
+//	HighlightRing        56 255 209 255
+//
+// Rally attributes
+//		Requires             Temporary_Powers.Temporary_Powers.Rally_Active source.ownPower? eq

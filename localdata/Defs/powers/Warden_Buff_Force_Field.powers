@@ -384,6 +384,9 @@ Power Warden_Buff.Force_Field.Deflection_Shield
 	Cancelable           kTrue
 	DisplayTargetShortHelp "P2240545096"
 	DisplayTargetHelp    "P639359596"
+	// Rally Border
+	HighlightEval        Temporary_Powers.Temporary_Powers.Rally_Active ownPowerNum? 1 ==
+	HighlightRing        156 227 120 255
 
 	AttribMod
 	{
@@ -481,7 +484,7 @@ Power Warden_Buff.Force_Field.Deflection_Shield
 		Target               kTarget
 		Scale                0.10
 		Type                 kMagnitude
-		AllowStrength        kTrue
+		AllowStrength        kFalse
 		AllowResistance      kFalse
 		Delay                0
 		Duration             0
@@ -495,28 +498,28 @@ Power Warden_Buff.Force_Field.Deflection_Shield
 		AllowCombatMods      kFalse
 	}
 
-//	AttribMod
-//	{
-//		Name                 "Ones"                        
-//		Table                "Ranged_Ones"                 
-//		Aspect               kMax
-//		Attrib               kAbsorb
-//		Target               kTarget
-//		Scale                10
-//		Type                 kMagnitude
-//		AllowStrength        kTrue
-//		AllowResistance      kFalse
-//		Delay                0
-//		Duration             240
-//		Magnitude            1
-//		Period               0
-//		Chance               1
-//		NearGround           kFalse
-//		CancelOnMiss         kFalse
-//		StackType            kOverlap
-//		Requires             Temporary_Powers.Temporary_Powers.Rally_Active source.ownPower? eq
-//		AllowCombatMods      kFALSE
-//	}
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kMax
+		Attrib               kAbsorb
+		Target               kTarget
+		Scale                1
+		Type                 kExpression
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             60
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		MagnitudeExpr        Max.kHitPoints source> 0.10 * @Strength *
+		AllowCombatMods      kFALSE
+	}
 }
 
 Power Warden_Buff.Force_Field.Force_Bolt
@@ -1091,6 +1094,9 @@ Power Warden_Buff.Force_Field.Dispersion_Bubble
 	MaxTargetsHit        255
 	DisplayTargetShortHelp "P3780623979"
 	DisplayTargetHelp    "P1240327833"
+	// Rally Border
+	HighlightEval        Temporary_Powers.Temporary_Powers.Rally_Active ownPowerNum? 1 ==
+	HighlightRing        156 227 120 255
 
 	AttribMod
 	{
@@ -1444,6 +1450,52 @@ Power Warden_Buff.Force_Field.Dispersion_Bubble
 		StackType            kReplace
 		Requires             isPVPMap?
 	}
+
+// Rally attributes
+
+	AttribMod
+	{
+		Name                 "Res_Dmg"                     
+		Table                "Ranged_Res_Dmg"              
+		Aspect               kRes
+		Attrib               kSmashing
+		Target               kTarget
+		Scale                1.333
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             2.25
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		Requires             Temporary_Powers.Temporary_Powers.Rally_Active source.ownPower? eq
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Dmg"                     
+		Table                "Ranged_Res_Dmg"              
+		Aspect               kRes
+		Attrib               kLethal
+		Target               kTarget
+		Scale                1.333
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             2.25
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		Requires             Temporary_Powers.Temporary_Powers.Rally_Active source.ownPower? eq
+	}
 }
 
 Power Warden_Buff.Force_Field.Repulsion_Field
@@ -1578,6 +1630,9 @@ Power Warden_Buff.Force_Field.Repulsion_Bomb
 	MaxTargetsHit        16
 	DisplayTargetShortHelp "P2848422893"
 	DisplayTargetHelp    "P2366756416"
+	// Rally Border
+	HighlightEval        Temporary_Powers.Temporary_Powers.Rally_Active ownPowerNum? 1 ==
+	HighlightRing        156 227 120 255
 
 	AttribMod
 	{
@@ -1753,6 +1808,58 @@ Power Warden_Buff.Force_Field.Repulsion_Bomb
 		StackType            kStack
 		Requires             enttype target> player eq
 	}
+
+//Rally
+	AttribMod
+	{
+		Name                 "Damage"                      
+		Table                "Ranged_Damage"               
+		Aspect               kAbs
+		Attrib               kEnergy
+		Target               kTarget
+		Scale                4.2
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P1956747474"
+		DisplayVictimHit     "P524369720"
+		StackType            kStack
+		Requires             Temporary_Powers.Temporary_Powers.Rally_Active source.ownPower? eq
+	}
+
+	AttribMod
+	{
+		Name                 "Slow"                        
+		Table                "Melee_Ones"                 
+		Aspect               kCur
+		Attrib               kRunSpeed
+		Target               kTarget
+		Scale                -0.4
+		Type                 kDuration
+		AllowStrength        kFalse
+		AllowResistance      kTrue
+		Delay                0.125
+		Duration             20
+		Magnitude            1
+		Period               0
+		Chance               0.4
+		NearGround           kTrue
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P2160290682"
+		DisplayVictimHit     "P4062395835"
+		StackType            kStack
+		ConditionalFX        GenericContinuing/StunContinuing.fx
+		Requires             Temporary_Powers.Temporary_Powers.Rally_Active source.ownPower? eq
+
+	}
+
 }
 
 Power Warden_Buff.Force_Field.Force_Bubble

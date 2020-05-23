@@ -114,7 +114,7 @@ Power Temporary_Powers.Temporary_Powers.Rally_Active
 	LifeTime             90
 	StackingUsage        kFalse
 	MaxLifeTime          90
-	DisplayShortHelp     "P6969356375"
+	DisplayShortHelp     "P6969356377"
 	DisplayHelp          "P606969549"
 	IconName             "Inherent_WardenRally.tga"
 	TimeToConfirm        0
