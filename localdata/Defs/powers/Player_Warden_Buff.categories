@@ -16,6 +16,5 @@ PowerCategory Warden_Buff
 	PowerSets Warden_Buff.Thermal_Radiation
 	PowerSets Warden_Buff.Time_Manipulation
 	PowerSets Warden_Buff.Traps
-	PowerSets Warden_Buff.Trick_Arrow
 }
 

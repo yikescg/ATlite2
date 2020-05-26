@@ -588,6 +588,9 @@ Power Warden_Buff.Nature_Affinity.Regrowth
 	MaxTargetsHit        255
 	DisplayTargetShortHelp "P969877394"
 	DisplayTargetHelp    "P132748708"
+	// Rally Border
+	HighlightEval        Temporary_Powers.Temporary_Powers.Rally_Active ownPowerNum? 1 ==
+	HighlightRing        229 159 49 255
 
 	AttribMod
 	{
@@ -680,6 +683,53 @@ Power Warden_Buff.Nature_Affinity.Regrowth
 		CancelOnMiss         kFalse
 		StackType            kStack
 		Reward               Temporary_Powers.Temporary_Powers.Bloom
+	}
+
+	// Rally attributes
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kAbs
+		Attrib               kGrantPower
+		Target               kTarget
+		Scale                1
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		Requires             Temporary_Powers.Temporary_Powers.Rally_Active source.ownPower? eq
+		Reward               Temporary_Powers.Temporary_Powers.Bloom
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kCur
+		Attrib               kRecovery
+		Target               kTarget
+		Scale                0.15
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		Requires             Temporary_Powers.Temporary_Powers.Rally_Active source.ownPower? eq
 	}
 }
 
@@ -1482,6 +1532,9 @@ Power Warden_Buff.Nature_Affinity.Wild_Bastion
 	TimeToConfirm        0
 	MaxTargetsHit        255
 	Cancelable           kTRUE
+	// Rally Border
+	HighlightEval        Temporary_Powers.Temporary_Powers.Rally_Active ownPowerNum? 1 ==
+	HighlightRing        229 159 49 255
 
 	AttribMod
 	{
@@ -1573,6 +1626,80 @@ Power Warden_Buff.Nature_Affinity.Wild_Bastion
 		Reward               Temporary_Powers.Temporary_Powers.Bloom
 		// Additional Power Attribs
 		Params               3
+	}
+
+	// Rally attributes
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kCur
+		Attrib               kAbsorb
+		Target               kTarget
+		Scale                0.3
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		Requires             Temporary_Powers.Temporary_Powers.Rally_Active source.ownPower? eq
+		AllowCombatMods      kFalse
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kMax
+		Attrib               kAbsorb
+		Target               kTarget
+		Scale                1
+		Type                 kExpression
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             60
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		Requires             Temporary_Powers.Temporary_Powers.Rally_Active source.ownPower? eq
+		MagnitudeExpr        Max.kHitPoints source> 0.3 * @Strength *
+		AllowCombatMods      kFALSE
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kAbs
+		Attrib               kGrantPower
+		Target               kTarget
+		Scale                1
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		Requires             Temporary_Powers.Temporary_Powers.Rally_Active source.ownPower? eq
+		Reward               Temporary_Powers.Temporary_Powers.Bloom
+		// Additional Power Attribs
+		Params               2
 	}
 }
 
@@ -1769,7 +1896,7 @@ Power Warden_Buff.Nature_Affinity.Raging_Tempest
 	InterruptTime        0
 	TimeToActivate       2.03
 	RechargeTime         20
-	ActivatePeriod       5
+	ActivatePeriod       1
 	EffectArea           kSphere
 	Radius               15
 	Arc                  0
@@ -1784,6 +1911,9 @@ Power Warden_Buff.Nature_Affinity.Raging_Tempest
 	MaxTargetsHit        16
 	DisplayTargetShortHelp "P2993629167"
 	DisplayTargetHelp    "P4256842521"
+	// Rally Border
+	HighlightEval        Temporary_Powers.Temporary_Powers.Rally_Active ownPowerNum? 1 ==
+	HighlightRing        229 159 49 255
 
 	AttribMod
 	{
@@ -1799,7 +1929,7 @@ Power Warden_Buff.Nature_Affinity.Raging_Tempest
 		Delay                0
 		Duration             0
 		Magnitude            2
-		Period               0
+		Period               5
 		Chance               0.5
 		NearGround           kFalse
 		CancelOnMiss         kFalse
@@ -1826,7 +1956,7 @@ Power Warden_Buff.Nature_Affinity.Raging_Tempest
 		Delay                0
 		Duration             0
 		Magnitude            1
-		Period               0
+		Period               5
 		Chance               0.8
 		NearGround           kFalse
 		CancelOnMiss         kFalse
@@ -1853,7 +1983,7 @@ Power Warden_Buff.Nature_Affinity.Raging_Tempest
 		Delay                0
 		Duration             0
 		Magnitude            2
-		Period               0
+		Period               5
 		Chance               0.8
 		NearGround           kFalse
 		CancelOnMiss         kFalse
@@ -1869,7 +1999,90 @@ Power Warden_Buff.Nature_Affinity.Raging_Tempest
 		Suppress             Immobilized 15 WhenInactive
 		Suppress             Terrorized 15 WhenInactive
 	}
+
+	// Rally attributes
+
+	AttribMod
+	{
+		Name                 "Damage"                      
+		Table                "Melee_Damage"                
+		Aspect               kAbs
+		Attrib               kToxic
+		Target               kTarget
+		Scale                0.12
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0.25
+		Magnitude            1
+		Period               1
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		Requires             Temporary_Powers.Temporary_Powers.Rally_Active source.ownPower? eq
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kCur
+		Attrib               kHeld
+		Target               kTarget
+		Scale                8
+		Type                 kDuration
+		AllowStrength        kFalse
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               5
+		Chance               0.2
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P1416744077"
+		DisplayVictimHit     "P558192329"
+		StackType            kReplace
+		ConditionalBits      ANIM_HIT, ANIM_STUN, ANIM_LASSOSTUN
+		ConditionalFX        PFX
+		Requires             Temporary_Powers.Temporary_Powers.Rally_Active source.ownPower? enttype target> critter eq &&
+		AllowCombatMods      kFalse
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kCur
+		Attrib               kHeld
+		Target               kTarget
+		Scale                3.5
+		Type                 kDuration
+		AllowStrength        kFalse
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            2
+		Period               5
+		Chance               0.2
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P1416744077"
+		DisplayVictimHit     "P558192329"
+		StackType            kReplace
+		ConditionalBits      ANIM_HIT, ANIM_STUN, ANIM_LASSOSTUN
+		ConditionalFX        PFX
+		Requires             Temporary_Powers.Temporary_Powers.Rally_Active source.ownPower? enttype target> player eq &&
+		Suppress             Held 15 WhenInactive
+		Suppress             Sleep 15 WhenInactive
+		Suppress             Stunned 15 WhenInactive
+		Suppress             Immobilized 15 WhenInactive
+		Suppress             Terrorized 15 WhenInactive
+	}
 }
+
 
 Power Warden_Buff.Nature_Affinity.Overgrowth
 {

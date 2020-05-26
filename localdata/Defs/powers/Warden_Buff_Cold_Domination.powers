@@ -23,14 +23,17 @@ Power Warden_Buff.Cold_Domination.Infrigidate
 	Radius               0
 	Arc                  0
 	BoostsAllowed        kAccuracy_Boost, kEnduranceDiscount_Boost, kRecharge_Boost, kRange_Boost, kSlow_Boost, kDebuff_Defense_Boost,
-	VisualFX             "menu\Powers\AnimFX\PlayerPowers\CorruptorBuff_ColdDomination_Infrigidate.PFX"
-	include              menu\Powers\AnimFX\PlayerPowers\CorruptorBuff_ColdDomination_Infrigidate.PFX
+	VisualFX             "menu\Powers\AnimFX\PlayerPowers\WardenBuff_ColdDomination_Infrigidate.PFX"
+	include              menu\Powers\AnimFX\PlayerPowers\WardenBuff_ColdDomination_Infrigidate.PFX
 	DisplayShortHelp     "P1968399187"
 	DisplayHelp          "P1801918193"
 	IconName             "ColdDomination_Infrigidate.tga"
 	TimeToConfirm        0
 	DisplayTargetShortHelp "P3826042965"
 	DisplayTargetHelp    "P3577038462"
+	// Rally Border
+	HighlightEval        Temporary_Powers.Temporary_Powers.Rally_Active ownPowerNum? 1 ==
+	HighlightRing        130 255 236 255
 
 	AttribMod
 	{
@@ -202,6 +205,85 @@ Power Warden_Buff.Cold_Domination.Infrigidate
 		NearGround           kFalse
 		CancelOnMiss         kFalse
 		StackType            kReplace
+	}
+
+	// Rally attributes
+
+	AttribMod
+	{
+		Name                 "Immobilize"                        
+		Table                "Ranged_Immobilize"                 
+		Aspect               kCur
+		Attrib               kHeld
+		Target               kTarget
+		Scale                15
+		Type                 kDuration
+		AllowStrength        kFalse
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            10
+		Period               5
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		ConditionalBits      ANIM_LASSOSTUN, ANIM_STRONG
+		ConditionalFX        PFX
+		Requires             Temporary_Powers.Temporary_Powers.Rally_Active source.ownPower? enttype target> critter eq &&
+		AllowCombatMods      kFalse
+	}
+
+	AttribMod
+	{
+		Name                 "Immobilize"                        
+		Table                "Ranged_Immobilize"                 
+		Aspect               kCur
+		Attrib               kImmobilize
+		Target               kTarget
+		Scale                10
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            7
+		Period               5
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		ConditionalFX        PFX2
+		Requires             Temporary_Powers.Temporary_Powers.Rally_Active source.ownPower? enttype target> player eq &&
+		Suppress             Held 15 WhenInactive
+		Suppress             Sleep 15 WhenInactive
+		Suppress             Stunned 15 WhenInactive
+		Suppress             Immobilized 15 WhenInactive
+		Suppress             Terrorized 15 WhenInactive
+	}
+
+	AttribMod
+	{
+		Name                 "Damage"                      
+		Table                "Ranged_Damage"               
+		Aspect               kAbs
+		Attrib               kCold
+		Target               kTarget
+		Scale                0.15
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kTrue
+		Delay                0
+		Duration             10
+		Magnitude            1
+		Period               1.25
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P3531357424"
+		DisplayVictimHit     "P4145920052"
+		StackType            kStack
+		Requires             Temporary_Powers.Temporary_Powers.Rally_Active source.ownPower?
 	}
 }
 
@@ -710,6 +792,9 @@ Power Warden_Buff.Cold_Domination.Frostwork
 	Cancelable           kTrue
 	DisplayTargetShortHelp "P862573566"
 	DisplayTargetHelp    "P1386939"
+	// Rally Border
+	HighlightEval        Temporary_Powers.Temporary_Powers.Rally_Active ownPowerNum? 1 ==
+	HighlightRing        130 255 236 255
 
 	AttribMod
 	{
@@ -722,7 +807,7 @@ Power Warden_Buff.Cold_Domination.Frostwork
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
-		Delay                0
+		Delay                0.5
 		Duration             120
 		Magnitude            1
 		Period               0
@@ -744,7 +829,7 @@ Power Warden_Buff.Cold_Domination.Frostwork
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
-		Delay                0
+		Delay                0.5
 		Duration             120
 		Magnitude            1
 		Period               0
@@ -753,6 +838,31 @@ Power Warden_Buff.Cold_Domination.Frostwork
 		CancelOnMiss         kFalse
 		StackType            kReplace
 		ContinuingFX         PFX2
+	}
+
+	// Rally attributes
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kAbs
+		Attrib               kGrantPower
+		Target               kTarget
+		Scale                1
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kOverlap
+		Reward               Temporary_Powers.Temporary_Powers.Frostwork_Rally
+		Requires             Temporary_Powers.Temporary_Powers.Rally_Active source.ownPower? eq
 	}
 }
 
@@ -1297,6 +1407,9 @@ Power Warden_Buff.Cold_Domination.Benumb
 	TimeToConfirm        0
 	DisplayTargetShortHelp "P888300159"
 	DisplayTargetHelp    "P838811387"
+	// Rally Border
+	HighlightEval        Temporary_Powers.Temporary_Powers.Rally_Active ownPowerNum? 1 ==
+	HighlightRing        130 255 236 255
 
 	AttribMod
 	{
@@ -2062,6 +2175,74 @@ Power Warden_Buff.Cold_Domination.Benumb
 		DisplayVictimHit     "P1647961911"
 		StackType            kStack
 		Requires             enttype target> player eq
+	}
+
+	// Rally attributes
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kCur
+		Attrib               kRecovery
+		Target               kTarget
+		Scale                -0.3
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kTrue
+		Delay                0
+		Duration             30
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		Requires             Temporary_Powers.Temporary_Powers.Rally_Active source.ownPower? eq
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kStr
+		Attrib               kRechargeTime
+		Target               kTarget
+		Scale                -0.3
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kTrue
+		Delay                0
+		Duration             30
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		Requires             Temporary_Powers.Temporary_Powers.Rally_Active source.ownPower? enttype target> critter eq &&
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kStr
+		Attrib               kRechargeTime
+		Target               kTarget
+		Scale                -0.18
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kTrue
+		Delay                0
+		Duration             30
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		Requires             Temporary_Powers.Temporary_Powers.Rally_Active source.ownPower? enttype target> player eq &&
 	}
 }
 

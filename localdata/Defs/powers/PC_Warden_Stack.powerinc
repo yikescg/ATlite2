@@ -166,3 +166,88 @@ Power Temporary_Powers.Temporary_Powers.Rally_Active
 		AllowCombatMods      kFalse
 	}
 }
+
+// Rally mode-specific powers
+
+Power Temporary_Powers.Temporary_Powers.Frostwork_Rally
+{
+	Name                 "Frostwork_Rally"                   
+	DisplayName          "P736381502"
+	ModesDisallowed      kDisable_All
+	Type                 kAuto
+	Accuracy             1
+	EntsAffected         kFriend
+	EntsAutoHit          kFriend
+	Target               kCaster
+	Range                0
+	EnduranceCost        0
+	IdeaCost             0
+	TravelSuppression    2.5
+	InterruptTime        0
+	TimeToActivate       1.17
+	RechargeTime         5
+	ActivatePeriod       0
+	EffectArea           kSphere
+	Radius               25
+	Arc                  0
+	AIReport             kNever
+	LifeTime             2
+	StackingUsage        kFalse
+	MaxLifeTime          2
+	BoostsAllowed        kEnduranceDiscount_Boost, kRecharge_Boost, kRange_Boost, kHeal_Boost
+	VisualFX             "menu\Powers\AnimFX\PlayerPowers\CorruptorBuff_ColdDomination_Frostwork.PFX"
+	include              menu\Powers\AnimFX\PlayerPowers\CorruptorBuff_ColdDomination_Frostwork.PFX
+	DisplayShortHelp     "P2319784263"
+	DisplayHelp          "P274192473"
+	DisplayAttackerHit   "P604490536"
+	DisplayVictimHit     "P2467715283"
+	IconName             "ColdDomination_Frostwork.tga"
+	TimeToConfirm        0
+	Cancelable           kTrue
+	DisplayTargetShortHelp "P862573566"
+	DisplayTargetHelp    "P1386939"
+
+	AttribMod
+	{
+		Name                 "Heal"                        
+		Table                "Ranged_Heal"                 
+		Aspect               kMax
+		Attrib               kHitPoints
+		Target               kTarget
+		Scale                2
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		ContinuingFX         PFX
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Dmg"                     
+		Table                "Ranged_Res_Dmg"              
+		Aspect               kRes
+		Attrib               kToxic
+		Target               kTarget
+		Scale                2
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             120
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		ContinuingFX         PFX2
+	}
+}
